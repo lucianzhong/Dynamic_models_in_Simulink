@@ -1,0 +1,7557 @@
+Model {
+  Name			  "DoAero_2008a"
+  Version		  7.1
+  MdlSubVersion		  0
+  SavedCharacterEncoding  "GBK"
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.221"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime off
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  Created		  "Thu Nov 29 08:47:21 2012"
+  Creator		  "abdelrazzak.merheb"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "flying"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Tue Dec 13 17:46:37 2016"
+  RTWModifiedTimeStamp	  403551997
+  ModelVersionFormat	  "1.%<AutoIncrement:221>"
+  ConfigurationManager	  "none"
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      7
+      Version		      "1.4.0"
+      Array {
+	Type			"Handle"
+	Dimension		7
+	Simulink.SolverCC {
+	  $ObjectID		  8
+	  Version		  "1.4.0"
+	  StartTime		  "0.0"
+	  StopTime		  "100"
+	  AbsTol		  "auto"
+	  FixedStep		  "0.01"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  Solver		  "ode3"
+	  SolverName		  "ode3"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  Non-adaptive
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  9
+	  Version		  "1.4.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveFormat		  "Array"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  10
+	  Version		  "1.4.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    9
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "UseSpecifiedMinMax"
+	    Cell		    "InitFltsAndDblsToZero"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  ExpressionFolding	  on
+	  ExpressionDepthLimit	  2147483647
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization Off
+	  AccelVerboseBuild	  off
+	  EnforceIntegerDowncast  on
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  11
+	  Version		  "1.4.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Use local settings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BlockIODiagnostic	  "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  ModelReferenceSimTargetVerbose off
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  12
+	  Version		  "1.4.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  13
+	  Version		  "1.4.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  15
+	  Version		  "1.4.0"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    16
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    Cell		    "PortableWordSizes"
+	    Cell		    "GenerateWebview"
+	    Cell		    "GenerateCodeMetricsReport"
+	    Cell		    "GenerateCodeReplacementReport"
+	    Cell		    "GenerateMissedCodeReplacementReport"
+	    Cell		    "GenerateErtSFunction"
+	    Cell		    "CreateSILPILBlock"
+	    Cell		    "CodeExecutionProfiling"
+	    Cell		    "CodeProfilingSaveOptions"
+	    Cell		    "CodeProfilingInstrumentation"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  TLCOptions		  ""
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "grt_default_tmf"
+	  PostCodeGenCommand	  ""
+	  Description		  ""
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  CustomSourceCode	  ""
+	  CustomHeaderCode	  ""
+	  CustomInclude		  ""
+	  CustomSource		  ""
+	  CustomLibrary		  ""
+	  CustomInitializer	  ""
+	  CustomTerminator	  ""
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  RTWCompilerOptimization Off
+	  RTWCustomCompilerOptimizations ""
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      16
+	      Version		      "1.4.0"
+	      Array {
+		Type			"Cell"
+		Dimension		24
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"SFDataObjDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"ParameterTuningSideEffectCode"
+		Cell			"InsertPolySpaceComments"
+		Cell			"MATLABFcnDesc"
+		Cell			"InternalIdentifier"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrUtil"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M_T"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      SimulinkBlockComments   on
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      17
+	      Version		      "1.4.0"
+	      Array {
+		Type			"Cell"
+		Dimension		17
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"SupportNonFinite"
+		Cell			"PortableWordSizes"
+		Cell			"PurelyIntegerCode"
+		Cell			"MultiInstanceERTCode"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"CPPClassGenCompliant"
+		Cell			"CombineOutputUpdateFcns"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      TargetFunctionLibrary   "C89/C90 (ANSI)"
+	      UtilityFuncGeneration   "Auto"
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      ModelReferenceCompliant on
+	      CompOptLevelCompliant   on
+	      IncludeMdlTerminateFcn  on
+	      CombineOutputUpdateFcns off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      ParenthesesLevel	      "Nominal"
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    off
+	      AutosarCompliant	      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      ExtraOptions	      "-aGenerateTraceInfo=0 -aIgnoreTestpoints=0 "
+      CurrentDlgPage	      "Data Import//Export"
+      ConfigPrmDlgPosition    [ 63, 40, 1239, 914 ]  
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    7
+  }
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    Orientation		    "right"
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      BusCreator
+      Inputs		      "4"
+      DisplayOption	      "none"
+      NonVirtualBus	      off
+      UseBusObject	      off
+      BusObject		      "BusObject"
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "fixdt(1,16,0)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "[]"
+    }
+    Block {
+      BlockType		      Demux
+      Outputs		      "4"
+      DisplayOption	      "none"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      FrameConversion
+      InheritSamplingMode     off
+      OutFrame		      "Frame-based"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchByCopyingInsideSignal off
+      Interpolate	      on
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+    }
+    Block {
+      BlockType		      Integrator
+      ExternalReset	      "none"
+      InitialConditionSource  "internal"
+      InitialCondition	      "0"
+      LimitOutput	      off
+      UpperSaturationLimit    "inf"
+      LowerSaturationLimit    "-inf"
+      ShowSaturationPort      off
+      ShowStatePort	      off
+      AbsoluteTolerance	      "auto"
+      IgnoreLimit	      off
+      ZeroCross		      on
+      ContinuousStateAttributes	"''"
+    }
+    Block {
+      BlockType		      Memory
+      X0		      "0"
+      InheritSampleTime	      off
+      LinearizeMemory	      off
+      LinearizeAsDelay	      off
+      StateMustResolveToSignalObject off
+      RTWStateStorageClass    "Auto"
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+    }
+    Block {
+      BlockType		      Product
+      Inputs		      "2"
+      Multiplication	      "Element-wise(.*)"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+    }
+    Block {
+      BlockType		      S-Function
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+      SFunctionDeploymentMode off
+      EnableBusSupport	      off
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+    }
+    Block {
+      BlockType		      Terminator
+    }
+    Block {
+      BlockType		      ToWorkspace
+      VariableName	      "simulink_output"
+      MaxDataPoints	      "1000"
+      Decimation	      "1"
+      SaveFormat	      "Array"
+      FixptAsFi		      off
+      SampleTime	      "0"
+    }
+  }
+  System {
+    Name		    "DoAero_2008a"
+    Location		    [-7, 0, 967, 1047]
+    Open		    off
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Constant
+      Name		      "Constant"
+      Position		      [840, 250, 870, 280]
+      Value		      "2000"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant1"
+      Position		      [840, 295, 870, 325]
+      Value		      "2000"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant2"
+      Position		      [840, 340, 870, 370]
+      Value		      "2000"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant3"
+      Position		      [840, 385, 870, 415]
+      Value		      "2000"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Dynamic model"
+      Ports		      [9, 13]
+      Position		      [1115, 232, 1270, 618]
+      System {
+	Name			"Dynamic model"
+	Location		[-7, 0, 967, 1047]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"150"
+	Block {
+	  BlockType		  Inport
+	  Name			  "u1"
+	  Position		  [240, 698, 270, 712]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "u2"
+	  Position		  [240, 743, 270, 757]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "u3"
+	  Position		  [240, 793, 270, 807]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "u4"
+	  Position		  [240, 843, 270, 857]
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "m"
+	  Position		  [240, 883, 270, 897]
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "I_xx"
+	  Position		  [240, 933, 270, 947]
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "I_yy"
+	  Position		  [240, 983, 270, 997]
+	  Port			  "7"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "I_zz"
+	  Position		  [240, 1033, 270, 1047]
+	  Port			  "8"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Arm_length"
+	  Position		  [240, 1083, 270, 1097]
+	  Port			  "9"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator"
+	  Ports			  [1, 1]
+	  Position		  [1740, 1070, 1770, 1100]
+	  Port {
+	    PortNumber		    1
+	    Name		    "roll_dot"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator1"
+	  Ports			  [1, 1]
+	  Position		  [1780, 1335, 1810, 1365]
+	  Port {
+	    PortNumber		    1
+	    Name		    "pitch_dot"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator2"
+	  Ports			  [1, 1]
+	  Position		  [1740, 1155, 1770, 1185]
+	  Port {
+	    PortNumber		    1
+	    Name		    "yaw_dot"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator3"
+	  Ports			  [1, 1]
+	  Position		  [1980, 1070, 2010, 1100]
+	  Port {
+	    PortNumber		    1
+	    Name		    "roll"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator4"
+	  Ports			  [1, 1]
+	  Position		  [1955, 1335, 1985, 1365]
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator5"
+	  Ports			  [1, 1]
+	  Position		  [1955, 1155, 1985, 1185]
+	  Port {
+	    PortNumber		    1
+	    Name		    "yaw"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator6"
+	  Ports			  [1, 1]
+	  Position		  [1700, 515, 1730, 545]
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator7"
+	  Ports			  [1, 1]
+	  Position		  [1815, 515, 1845, 545]
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator8"
+	  Ports			  [1, 1]
+	  Position		  [1815, 100, 1845, 130]
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator9"
+	  Ports			  [1, 1]
+	  Position		  [1795, 305, 1825, 335]
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "MATLAB Function"
+	  Ports			  [3, 6]
+	  Position		  [895, 700, 1030, 925]
+	  PermitHierarchicalResolution "ParametersOnly"
+	  TreatAsAtomicUnit	  on
+	  MaskType		  "Stateflow"
+	  MaskDescription	  "Embedded MATLAB block"
+	  MaskSelfModifiable	  on
+	  MaskDisplay		  "bgColor = Simulink.Root.ColorString2Rgb(get_param(gcbh, 'BackgroundColor')); image(imread('private/"
+	  "eml_membrane_16.png','png','BackgroundColor',bgColor(1:3)),'center'); disp([10 10 'fcn']);"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  off
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "normalized"
+	  System {
+	    Name		    "MATLAB Function"
+	    Location		    [223, 338, 826, 833]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "pitch"
+	      Position		      [20, 101, 40, 119]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "roll"
+	      Position		      [20, 136, 40, 154]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "yaw"
+	      Position		      [20, 171, 40, 189]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      " Demux "
+	      Ports		      [1, 1]
+	      Position		      [270, 350, 320, 390]
+	      Outputs		      "1"
+	    }
+	    Block {
+	      BlockType		      S-Function
+	      Name		      " SFunction "
+	      Tag		      "Stateflow S-Function DoAero_2008a 8"
+	      Ports		      [3, 7]
+	      Position		      [180, 110, 230, 270]
+	      FunctionName	      "sf_sfun"
+	      PortCounts	      "[3 7]"
+	      EnableBusSupport	      on
+	      Port {
+		PortNumber		2
+		Name			"sinpitch"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		3
+		Name			"cospitch"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		4
+		Name			"sinroll"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		5
+		Name			"cosroll"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		6
+		Name			"sinyaw"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		7
+		Name			"cosyaw"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Terminator
+	      Name		      " Terminator "
+	      Position		      [460, 361, 480, 379]
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "sinpitch"
+	      Position		      [460, 101, 480, 119]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "cospitch"
+	      Position		      [460, 136, 480, 154]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "sinroll"
+	      Position		      [460, 171, 480, 189]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "cosroll"
+	      Position		      [460, 206, 480, 224]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "sinyaw"
+	      Position		      [460, 246, 480, 264]
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "cosyaw"
+	      Position		      [460, 281, 480, 299]
+	      Port		      "6"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "pitch"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "roll"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "yaw"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      3
+	    }
+	    Line {
+	      Name		      "sinpitch"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      2
+	      DstBlock		      "sinpitch"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "cospitch"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      3
+	      DstBlock		      "cospitch"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "sinroll"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      4
+	      Points		      [0, -10]
+	      DstBlock		      "sinroll"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "cosroll"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      5
+	      DstBlock		      "cosroll"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "sinyaw"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      6
+	      DstBlock		      "sinyaw"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "cosyaw"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      7
+	      DstBlock		      "cosyaw"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      " Demux "
+	      SrcPort		      1
+	      DstBlock		      " Terminator "
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      " SFunction "
+	      SrcPort		      1
+	      DstBlock		      " Demux "
+	      DstPort		      1
+	    }
+	  }
+	  RTWSystemCode		  "Auto"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  MaskHideContents	  off
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "pitch_dot_dot"
+	  Ports			  [7, 1]
+	  Position		  [1345, 884, 1655, 1026]
+	  System {
+	    Name		    "pitch_dot_dot"
+	    Location		    [-8, 0, 1924, 1056]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "250"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In1"
+	      Position		      [805, 468, 835, 482]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In2"
+	      Position		      [1205, 483, 1235, 497]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In3"
+	      Position		      [850, 428, 880, 442]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In4"
+	      Position		      [1020, 498, 1050, 512]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In5"
+	      Position		      [885, 388, 915, 402]
+	      Orientation	      "left"
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In6"
+	      Position		      [935, 545, 965, 560]
+	      Orientation	      "up"
+	      Port		      "6"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In7"
+	      Position		      [885, 495, 915, 510]
+	      Orientation	      "up"
+	      Port		      "7"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Add3"
+	      Ports		      [2, 1]
+	      Position		      [1175, 387, 1205, 418]
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Add6"
+	      Ports		      [2, 1]
+	      Position		      [965, 442, 995, 473]
+	      Inputs		      "+-"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Divide4"
+	      Ports		      [2, 1]
+	      Position		      [1260, 397, 1290, 428]
+	      Inputs		      "*/"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product12"
+	      Ports		      [2, 1]
+	      Position		      [1045, 417, 1075, 448]
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product13"
+	      Ports		      [2, 1]
+	      Position		      [1090, 377, 1120, 408]
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product9"
+	      Ports		      [2, 1]
+	      Position		      [965, 392, 995, 423]
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      Position		      [1315, 503, 1345, 517]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "Product12"
+	      SrcPort		      1
+	      Points		      [12, 0; 0, -18; 61, 0; 0, -7]
+	      DstBlock		      "Add3"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Product13"
+	      SrcPort		      1
+	      DstBlock		      "Add3"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In1"
+	      SrcPort		      1
+	      Points		      [116, 0; 0, -90]
+	      DstBlock		      "Product13"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Add6"
+	      SrcPort		      1
+	      Points		      [4, 0; 0, -20]
+	      DstBlock		      "Product12"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Add3"
+	      SrcPort		      1
+	      DstBlock		      "Divide4"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Product9"
+	      SrcPort		      1
+	      Points		      [9, 0; 0, 15]
+	      DstBlock		      "Product12"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In4"
+	      SrcPort		      1
+	      Points		      [9, 0; 0, -25; -38, 0; 0, -80]
+	      DstBlock		      "Product13"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "In6"
+	      SrcPort		      1
+	      Points		      [0, -36; -3, 0; 0, -89]
+	      DstBlock		      "Product9"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "In7"
+	      SrcPort		      1
+	      Points		      [0, -25]
+	      DstBlock		      "Add6"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "In3"
+	      SrcPort		      1
+	      Points		      [29, 0; 0, 15]
+	      DstBlock		      "Add6"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In2"
+	      SrcPort		      1
+	      Points		      [5, 0]
+	      DstBlock		      "Divide4"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "In5"
+	      SrcPort		      1
+	      Points		      [-9, 0; 0, -21; 78, 0; 0, 26]
+	      DstBlock		      "Product9"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Divide4"
+	      SrcPort		      1
+	      Points		      [5, 0]
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	  }
+	  RTWSystemCode		  "Auto"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  MaskHideContents	  off
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "roll_dot_dot"
+	  Ports			  [7, 1]
+	  Position		  [1345, 642, 1650, 798]
+	  System {
+	    Name		    "roll_dot_dot"
+	    Location		    [-8, 0, 1924, 1056]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "175"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In1"
+	      Position		      [1680, 608, 1710, 622]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In2"
+	      Position		      [1655, 540, 1685, 555]
+	      Orientation	      "up"
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In3"
+	      Position		      [1625, 803, 1655, 817]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In4"
+	      Position		      [1700, 830, 1730, 845]
+	      Orientation	      "up"
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In5"
+	      Position		      [1635, 715, 1665, 730]
+	      Orientation	      "up"
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In6"
+	      Position		      [1655, 673, 1685, 687]
+	      Orientation	      "left"
+	      Port		      "6"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In7"
+	      Position		      [1890, 498, 1920, 512]
+	      Port		      "7"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Add2"
+	      Ports		      [2, 1]
+	      Position		      [1870, 617, 1900, 648]
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Add5"
+	      Ports		      [2, 1]
+	      Position		      [1760, 727, 1790, 758]
+	      Inputs		      "+-"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Divide3"
+	      Ports		      [2, 1]
+	      Position		      [1990, 567, 2020, 598]
+	      Inputs		      "*/"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product10"
+	      Ports		      [2, 1]
+	      Position		      [1810, 672, 1840, 703]
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product11"
+	      Ports		      [2, 1]
+	      Position		      [1780, 607, 1810, 638]
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product8"
+	      Ports		      [2, 1]
+	      Position		      [1745, 662, 1775, 693]
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      Position		      [2040, 653, 2070, 667]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "Product11"
+	      SrcPort		      1
+	      DstBlock		      "Add2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Add5"
+	      SrcPort		      1
+	      Points		      [3, 0; 0, -50]
+	      DstBlock		      "Product10"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "In1"
+	      SrcPort		      1
+	      DstBlock		      "Product11"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Add2"
+	      SrcPort		      1
+	      Points		      [35, 0; 0, -60]
+	      DstBlock		      "Divide3"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Product8"
+	      SrcPort		      1
+	      DstBlock		      "Product10"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Product10"
+	      SrcPort		      1
+	      Points		      [9, 0; 0, -50]
+	      DstBlock		      "Add2"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Divide3"
+	      SrcPort		      1
+	      Points		      [5, 0; 0, 75]
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In5"
+	      SrcPort		      1
+	      Points		      [95, 0]
+	      DstBlock		      "Add5"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In3"
+	      SrcPort		      1
+	      Points		      [9, 0; 0, -33; 77, 0]
+	      DstBlock		      "Add5"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "In2"
+	      SrcPort		      1
+	      Points		      [0, -9; 60, 0]
+	      DstBlock		      "Product8"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In7"
+	      SrcPort		      1
+	      Points		      [5, 0; 0, 85]
+	      DstBlock		      "Divide3"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "In4"
+	      SrcPort		      1
+	      Points		      [0, -195]
+	      DstBlock		      "Product11"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "In6"
+	      SrcPort		      1
+	      Points		      [-9, 0; 0, -11; 65, 0; 0, 16]
+	      DstBlock		      "Product8"
+	      DstPort		      2
+	    }
+	  }
+	  RTWSystemCode		  "Auto"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  MaskHideContents	  off
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "x_dot_dot"
+	  Ports			  [7, 1]
+	  Position		  [1265, 19, 1710, 211]
+	  System {
+	    Name		    "x_dot_dot"
+	    Location		    [-8, -8, 1928, 1048]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "40"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In1"
+	      Position		      [75, 295, 105, 310]
+	      Orientation	      "up"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In2"
+	      Position		      [25, 315, 55, 330]
+	      Orientation	      "up"
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In3"
+	      Position		      [190, 335, 220, 350]
+	      Orientation	      "up"
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In4"
+	      Position		      [390, 355, 420, 370]
+	      Orientation	      "up"
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In5"
+	      Position		      [145, 395, 175, 410]
+	      Orientation	      "up"
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In6"
+	      Position		      [195, 438, 225, 452]
+	      Port		      "6"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In7"
+	      Position		      [415, 590, 445, 605]
+	      Orientation	      "up"
+	      Port		      "7"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Add"
+	      Ports		      [2, 1]
+	      Position		      [745, 162, 775, 193]
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Divide"
+	      Ports		      [2, 1]
+	      Position		      [1010, 92, 1040, 123]
+	      Inputs		      "*/"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	      Port {
+		PortNumber		1
+		Name			"x_dot_dot"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product1"
+	      Ports		      [3, 1]
+	      Position		      [625, 161, 660, 229]
+	      Inputs		      "3"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product2"
+	      Ports		      [2, 1]
+	      Position		      [630, 102, 660, 133]
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product3"
+	      Ports		      [2, 1]
+	      Position		      [885, 82, 915, 113]
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      Position		      [1345, 178, 1375, 192]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "In1"
+	      SrcPort		      1
+	      Points		      [0, -270; 569, 0; 0, 70]
+	      DstBlock		      "Product3"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In6"
+	      SrcPort		      1
+	      Points		      [233, 0; 0, -399; 149, 0]
+	      DstBlock		      "Product1"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "In7"
+	      SrcPort		      1
+	      Points		      [0, -432; 570, 0; 0, -37]
+	      DstBlock		      "Divide"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "In4"
+	      SrcPort		      1
+	      Points		      [0, -225]
+	      DstBlock		      "Product2"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "In3"
+	      SrcPort		      1
+	      Points		      [0, -109; 289, 0; 0, -111]
+	      DstBlock		      "Product2"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In5"
+	      SrcPort		      1
+	      Points		      [0, -114; 339, 0; 0, -49; 110, 0]
+	      DstBlock		      "Product1"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "In2"
+	      SrcPort		      1
+	      Points		      [0, -106; 517, 0; 0, 6; 3, 0; 0, -35]
+	      DstBlock		      "Product1"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "x_dot_dot"
+	      Labels		      [2, 0]
+	      SrcBlock		      "Divide"
+	      SrcPort		      1
+	      Points		      [210, 0; 0, 75]
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Product2"
+	      SrcPort		      1
+	      Points		      [59, 0; 0, 65]
+	      DstBlock		      "Add"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Product1"
+	      SrcPort		      1
+	      Points		      [38, 0; 0, -25]
+	      DstBlock		      "Add"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Product3"
+	      SrcPort		      1
+	      DstBlock		      "Divide"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Add"
+	      SrcPort		      1
+	      Points		      [23, 0; 0, -75]
+	      DstBlock		      "Product3"
+	      DstPort		      2
+	    }
+	  }
+	  RTWSystemCode		  "Auto"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  MaskHideContents	  off
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "y_dot_dot"
+	  Ports			  [7, 1]
+	  Position		  [1345, 252, 1635, 388]
+	  System {
+	    Name		    "y_dot_dot"
+	    Location		    [-7, 0, 967, 1047]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "77"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In1"
+	      Position		      [815, 20, 845, 35]
+	      Orientation	      "down"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In2"
+	      Position		      [735, 128, 765, 142]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In3"
+	      Position		      [795, 108, 825, 122]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In4"
+	      Position		      [645, 160, 675, 175]
+	      Orientation	      "down"
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In5"
+	      Position		      [655, 228, 685, 242]
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In6"
+	      Position		      [655, 283, 685, 297]
+	      Port		      "6"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In7"
+	      Position		      [1145, 300, 1175, 315]
+	      Orientation	      "up"
+	      Port		      "7"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Add1"
+	      Ports		      [2, 1]
+	      Position		      [1005, 167, 1035, 198]
+	      Inputs		      "+-"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Divide1"
+	      Ports		      [2, 1]
+	      Position		      [1210, 172, 1240, 203]
+	      Inputs		      "*/"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	      Port {
+		PortNumber		1
+		Name			"y_dot_dot"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product5"
+	      Ports		      [3, 1]
+	      Position		      [900, 141, 935, 209]
+	      Inputs		      "3"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product6"
+	      Ports		      [2, 1]
+	      Position		      [825, 197, 855, 228]
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product7"
+	      Ports		      [2, 1]
+	      Position		      [1110, 177, 1140, 208]
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      Position		      [1290, 183, 1320, 197]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "In1"
+	      SrcPort		      1
+	      Points		      [0, 31; 256, 0; 0, 114]
+	      DstBlock		      "Product7"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In2"
+	      SrcPort		      1
+	      Points		      [9, 0; 0, 40]
+	      DstBlock		      "Product5"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "In5"
+	      SrcPort		      1
+	      Points		      [9, 0; 0, -15]
+	      DstBlock		      "Product6"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "In7"
+	      SrcPort		      1
+	      Points		      [0, -9; 28, 0; 0, -91]
+	      DstBlock		      "Divide1"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "In6"
+	      SrcPort		      1
+	      Points		      [9, 0; 0, -30; 184, 0]
+	      DstBlock		      "Product5"
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "In3"
+	      SrcPort		      1
+	      Points		      [33, 0; 0, 40]
+	      DstBlock		      "Product5"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In4"
+	      SrcPort		      1
+	      Points		      [0, 25]
+	      DstBlock		      "Product6"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Product5"
+	      SrcPort		      1
+	      DstBlock		      "Add1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Add1"
+	      SrcPort		      1
+	      Points		      [33, 0; 0, 15]
+	      DstBlock		      "Product7"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Product6"
+	      SrcPort		      1
+	      Points		      [9, 0; 0, 12; 101, 0; 0, -37]
+	      DstBlock		      "Add1"
+	      DstPort		      2
+	    }
+	    Line {
+	      Name		      "y_dot_dot"
+	      Labels		      [0, 0]
+	      SrcBlock		      "Divide1"
+	      SrcPort		      1
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Product7"
+	      SrcPort		      1
+	      Points		      [30, 0; 0, -15]
+	      DstBlock		      "Divide1"
+	      DstPort		      1
+	    }
+	  }
+	  RTWSystemCode		  "Auto"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  MaskHideContents	  off
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "yaw_dot_dot"
+	  Ports			  [6, 1]
+	  Position		  [1350, 1044, 1645, 1216]
+	  System {
+	    Name		    "yaw_dot_dot"
+	    Location		    [100, 100, 600, 900]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "80"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In1"
+	      Position		      [20, 23, 50, 37]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In2"
+	      Position		      [700, 213, 730, 227]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In3"
+	      Position		      [280, 263, 310, 277]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In4"
+	      Position		      [135, 355, 165, 370]
+	      Orientation	      "up"
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In5"
+	      Position		      [1360, 435, 1390, 450]
+	      Orientation	      "up"
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In6"
+	      Position		      [725, 778, 755, 792]
+	      Port		      "6"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Add7"
+	      Ports		      [2, 1]
+	      Position		      [1010, 152, 1040, 183]
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Add8"
+	      Ports		      [2, 1]
+	      Position		      [855, 247, 885, 278]
+	      Inputs		      "+-"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Divide5"
+	      Ports		      [2, 1]
+	      Position		      [1090, 202, 1120, 233]
+	      Inputs		      "*/"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product14"
+	      Ports		      [2, 1]
+	      Position		      [940, 192, 970, 223]
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product15"
+	      Ports		      [2, 1]
+	      Position		      [855, 197, 885, 228]
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      Position		      [1250, 243, 1280, 257]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "In4"
+	      SrcPort		      1
+	      Points		      [0, -95]
+	      DstBlock		      "Add8"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In6"
+	      SrcPort		      1
+	      Points		      [288, 0; 0, -558]
+	      DstBlock		      "Divide5"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "In2"
+	      SrcPort		      1
+	      DstBlock		      "Product15"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "In3"
+	      SrcPort		      1
+	      DstBlock		      "Add8"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "In5"
+	      SrcPort		      1
+	      Points		      [0, -237; -374, 0; 0, -23; -159, 0]
+	      DstBlock		      "Product15"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Product14"
+	      SrcPort		      1
+	      Points		      [13, 0; 0, -35]
+	      DstBlock		      "Add7"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Add8"
+	      SrcPort		      1
+	      Points		      [29, 0; 0, -50]
+	      DstBlock		      "Product14"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Product15"
+	      SrcPort		      1
+	      Points		      [13, 0; 0, -15]
+	      DstBlock		      "Product14"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In1"
+	      SrcPort		      1
+	      Points		      [175, 0; 0, 130]
+	      DstBlock		      "Add7"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Add7"
+	      SrcPort		      1
+	      Points		      [15, 0; 0, 40]
+	      DstBlock		      "Divide5"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Divide5"
+	      SrcPort		      1
+	      Points		      [50, 0; 0, 30]
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	  }
+	  RTWSystemCode		  "Auto"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  MaskHideContents	  off
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "z_dot_dot"
+	  Ports			  [4, 1]
+	  Position		  [1345, 460, 1635, 595]
+	  System {
+	    Name		    "z_dot_dot"
+	    Location		    [-7, 0, 967, 1047]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "175"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In1"
+	      Position		      [525, 355, 555, 370]
+	      Orientation	      "down"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In2"
+	      Position		      [475, 443, 505, 457]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In3"
+	      Position		      [525, 535, 555, 550]
+	      Orientation	      "up"
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "In4"
+	      Position		      [490, 483, 520, 497]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Sum
+	      Name		      "Add4"
+	      Ports		      [2, 1]
+	      Position		      [815, 437, 845, 468]
+	      Inputs		      "-+"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      SaturateOnIntegerOverflow	off
+	      Port {
+		PortNumber		1
+		Name			"z_dot_dot"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Divide2"
+	      Ports		      [2, 1]
+	      Position		      [745, 452, 775, 483]
+	      Inputs		      "*/"
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product"
+	      Ports		      [2, 1]
+	      Position		      [645, 377, 675, 408]
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Product
+	      Name		      "Product4"
+	      Ports		      [2, 1]
+	      Position		      [620, 482, 650, 513]
+	      InputSameDT	      off
+	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+	      RndMeth		      "Floor"
+	      SaturateOnIntegerOverflow	off
+	      OutDataTypeMode	      "Inherit via internal rule"
+	    }
+	    Block {
+	      BlockType		      Constant
+	      Name		      "u5"
+	      Position		      [745, 355, 775, 385]
+	      Value		      "9.8"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "Out1"
+	      Position		      [1020, 423, 1050, 437]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "In3"
+	      SrcPort		      1
+	      Points		      [0, -25]
+	      DstBlock		      "Product4"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "In2"
+	      SrcPort		      1
+	      Points		      [183, 0; 0, 27]
+	      DstBlock		      "Divide2"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "In1"
+	      SrcPort		      1
+	      Points		      [0, 25]
+	      DstBlock		      "Product"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Divide2"
+	      SrcPort		      1
+	      Points		      [15, 0; 0, -10]
+	      DstBlock		      "Add4"
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "Product4"
+	      SrcPort		      1
+	      Points		      [9, 0; 0, -74; -34, 0]
+	      DstBlock		      "Product"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "In4"
+	      SrcPort		      1
+	      DstBlock		      "Product4"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "u5"
+	      SrcPort		      1
+	      Points		      [15, 0; 0, 75]
+	      DstBlock		      "Add4"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "Product"
+	      SrcPort		      1
+	      Points		      [40, 0; 0, 65]
+	      DstBlock		      "Divide2"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "z_dot_dot"
+	      Labels		      [2, 0]
+	      SrcBlock		      "Add4"
+	      SrcPort		      1
+	      Points		      [75, 0; 0, -25]
+	      DstBlock		      "Out1"
+	      DstPort		      1
+	    }
+	  }
+	  RTWSystemCode		  "Auto"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  MaskHideContents	  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "X_dot\n"
+	  Position		  [1890, 108, 1920, 122]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Y_dot"
+	  Position		  [1905, 313, 1935, 327]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Z"
+	  Position		  [1900, 525, 1930, 540]
+	  Orientation		  "down"
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "roll"
+	  Position		  [2170, 1095, 2200, 1110]
+	  Orientation		  "down"
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "roll_dot"
+	  Position		  [2310, 1123, 2340, 1137]
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Z_dot"
+	  Position		  [1900, 583, 1930, 597]
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "yaw_dot"
+	  Position		  [2180, 1313, 2210, 1327]
+	  Port			  "7"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "yaw"
+	  Position		  [2180, 1168, 2210, 1182]
+	  Port			  "8"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "pitch"
+	  Position		  [2640, 1343, 2670, 1357]
+	  Port			  "9"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "pitch_dot"
+	  Position		  [2180, 1398, 2210, 1412]
+	  Port			  "10"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "X_dot_dot"
+	  Position		  [1890, 173, 1920, 187]
+	  Port			  "11"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Y_dot-dot"
+	  Position		  [1905, 363, 1935, 377]
+	  Port			  "12"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Z_dot_dot"
+	  Position		  [1900, 633, 1930, 647]
+	  Port			  "13"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "x_dot_dot"
+	  SrcPort		  1
+	  Points		  [49, 0]
+	  Branch {
+	    Points		    [0, 65]
+	    DstBlock		    "X_dot_dot"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Integrator8"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Integrator6"
+	  SrcPort		  1
+	  Points		  [38, 0]
+	  Branch {
+	    DstBlock		    "Integrator7"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 60]
+	    DstBlock		    "Z_dot"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "u4"
+	  SrcPort		  1
+	  Points		  [460, 0; 0, 205]
+	  DstBlock		  "yaw_dot_dot"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "MATLAB Function"
+	  SrcPort		  6
+	  Points		  [9, 0; 0, 50; -161, 0; 0, -535]
+	  Branch {
+	    Points		    [89, 0; 0, -250]
+	    DstBlock		    "x_dot_dot"
+	    DstPort		    6
+	  }
+	  Branch {
+	    Points		    [0, -75]
+	    DstBlock		    "y_dot_dot"
+	    DstPort		    5
+	  }
+	}
+	Line {
+	  SrcBlock		  "MATLAB Function"
+	  SrcPort		  3
+	  Points		  [62, 0; 0, 164; -225, 0; 0, -639; 189, 0]
+	  Branch {
+	    Points		    [0, -205]
+	    DstBlock		    "x_dot_dot"
+	    DstPort		    4
+	  }
+	  Branch {
+	    DstBlock		    "y_dot_dot"
+	    DstPort		    4
+	  }
+	}
+	Line {
+	  SrcBlock		  "MATLAB Function"
+	  SrcPort		  4
+	  Points		  [151, 0]
+	  Branch {
+	    Points		    [0, 90; -372, 0; 0, -560]
+	    Branch {
+	      Points		      [0, -220]
+	      DstBlock		      "x_dot_dot"
+	      DstPort		      5
+	    }
+	    Branch {
+	      DstBlock		      "y_dot_dot"
+	      DstPort		      6
+	    }
+	  }
+	  Branch {
+	    Points		    [0, -285]
+	    DstBlock		    "z_dot_dot"
+	    DstPort		    3
+	  }
+	}
+	Line {
+	  SrcBlock		  "MATLAB Function"
+	  SrcPort		  1
+	  Points		  [76, 0; 0, 219; -417, 0; 0, -664]
+	  Branch {
+	    Points		    [0, -215]
+	    DstBlock		    "x_dot_dot"
+	    DstPort		    2
+	  }
+	  Branch {
+	    DstBlock		    "y_dot_dot"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "m"
+	  SrcPort		  1
+	  Points		  [5, 0; 0, 212; 803, 0; 0, -547]
+	  Branch {
+	    Points		    [0, -365]
+	    DstBlock		    "x_dot_dot"
+	    DstPort		    7
+	  }
+	  Branch {
+	    Points		    [154, 0; 0, -45]
+	    Branch {
+	      DstBlock		      "z_dot_dot"
+	      DstPort		      2
+	    }
+	    Branch {
+	      Points		      [0, -130]
+	      DstBlock		      "y_dot_dot"
+	      DstPort		      7
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "MATLAB Function"
+	  SrcPort		  5
+	  Points		  [23, 0; 0, 90; -199, 0; 0, -655]
+	  Branch {
+	    Points		    [0, -210]
+	    DstBlock		    "x_dot_dot"
+	    DstPort		    3
+	  }
+	  Branch {
+	    DstBlock		    "y_dot_dot"
+	    DstPort		    3
+	  }
+	}
+	Line {
+	  SrcBlock		  "u1"
+	  SrcPort		  1
+	  Points		  [320, 0; 0, -416; 287, 0; 0, -29]
+	  Branch {
+	    DstBlock		    "y_dot_dot"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [-137, 0]
+	    Branch {
+	      Points		      [0, -220]
+	      DstBlock		      "x_dot_dot"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, 215]
+	      DstBlock		      "z_dot_dot"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "I_xx"
+	  SrcPort		  1
+	  Points		  [214, 0; 0, 415; 167, 0; 0, -85]
+	  Branch {
+	    Points		    [0, -125]
+	    DstBlock		    "yaw_dot_dot"
+	    DstPort		    4
+	  }
+	  Branch {
+	    Points		    [-9, 0; 0, -570]
+	    DstBlock		    "roll_dot_dot"
+	    DstPort		    3
+	  }
+	  Branch {
+	    Points		    [600, 0; 0, -355]
+	    DstBlock		    "pitch_dot_dot"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "I_yy"
+	  SrcPort		  1
+	  Points		  [237, 0; 0, 380; 310, 0; 0, -255]
+	  Branch {
+	    DstBlock		    "yaw_dot_dot"
+	    DstPort		    3
+	  }
+	  Branch {
+	    Points		    [0, -30]
+	    Branch {
+	      Points		      [0, -208; 508, 0]
+	      DstBlock		      "roll_dot_dot"
+	      DstPort		      7
+	    }
+	    Branch {
+	      Points		      [454, 0; 0, -150]
+	      DstBlock		      "pitch_dot_dot"
+	      DstPort		      3
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "I_zz"
+	  SrcPort		  1
+	  Points		  [110, 0; 0, 545; 99, 0]
+	  Branch {
+	    Points		    [0, -275; 725, 0; 0, -570]
+	    DstBlock		    "roll_dot_dot"
+	    DstPort		    5
+	  }
+	  Branch {
+	    Points		    [0, 119; 781, 0; 0, -166]
+	    Branch {
+	      Points		      [53, 0; 0, -333]
+	      DstBlock		      "yaw_dot_dot"
+	      DstPort		      6
+	    }
+	    Branch {
+	      Points		      [0, -523]
+	      DstBlock		      "pitch_dot_dot"
+	      DstPort		      7
+	    }
+	  }
+	}
+	Line {
+	  Name			  "roll"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Integrator3"
+	  SrcPort		  1
+	  Points		  [101, 0]
+	  Branch {
+	    Points		    [70, 0]
+	    DstBlock		    "roll"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 199; -1250, 0; 0, -469]
+	    DstBlock		    "MATLAB Function"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  Name			  "pitch_dot"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Integrator1"
+	  SrcPort		  1
+	  Points		  [63, 0]
+	  Branch {
+	    Points		    [0, 42; -548, 0; 0, -217]
+	    DstBlock		    "yaw_dot_dot"
+	    DstPort		    5
+	  }
+	  Branch {
+	    Points		    [24, 0]
+	    Branch {
+	      Points		      [0, -503; -597, 0; 0, -167]
+	      DstBlock		      "roll_dot_dot"
+	      DstPort		      2
+	    }
+	    Branch {
+	      Points		      [32, 0]
+	      Branch {
+		Points			[0, 55]
+		DstBlock		"pitch_dot"
+		DstPort			1
+	      }
+	      Branch {
+		DstBlock		"Integrator4"
+		DstPort			1
+	      }
+	    }
+	  }
+	}
+	Line {
+	  Name			  "yaw_dot"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Integrator2"
+	  SrcPort		  1
+	  Points		  [96, 0]
+	  Branch {
+	    Points		    [0, 148]
+	    Branch {
+	      Points		      [-602, 0; 0, -323]
+	      Branch {
+		Labels			[-1, 1]
+		Points			[0, -235]
+		DstBlock		"roll_dot_dot"
+		DstPort			6
+	      }
+	      Branch {
+		DstBlock		"pitch_dot_dot"
+		DstPort			6
+	      }
+	    }
+	    Branch {
+	      Points		      [0, 2]
+	      DstBlock		      "yaw_dot"
+	      DstPort		      1
+	    }
+	  }
+	  Branch {
+	    DstBlock		    "Integrator5"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  Name			  "roll_dot"
+	  SrcBlock		  "Integrator"
+	  SrcPort		  1
+	  Points		  [47, 0]
+	  Branch {
+	    Points		    [0, -39; -580, 0; 0, 53]
+	    Branch {
+	      Points		      [0, 371; -33, 0; 0, -140; 37, 0; 0, -355]
+	      DstBlock		      "pitch_dot_dot"
+	      DstPort		      5
+	    }
+	    Branch {
+	      Points		      [49, 0; 0, -14]
+	      DstBlock		      "yaw_dot_dot"
+	      DstPort		      2
+	    }
+	  }
+	  Branch {
+	    Labels		    [1, 1]
+	    Points		    [143, 0]
+	    Branch {
+	      Points		      [0, 45]
+	      DstBlock		      "roll_dot"
+	      DstPort		      1
+	    }
+	    Branch {
+	      DstBlock		      "Integrator3"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Line {
+	  SrcBlock		  "Integrator8"
+	  SrcPort		  1
+	  DstBlock		  "X_dot\n"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Integrator9"
+	  SrcPort		  1
+	  DstBlock		  "Y_dot"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "yaw"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Integrator5"
+	  SrcPort		  1
+	  Points		  [7, 0; 0, 4]
+	  Branch {
+	    Points		    [0, 55; -1119, 0; 0, -339]
+	    DstBlock		    "MATLAB Function"
+	    DstPort		    3
+	  }
+	  Branch {
+	    DstBlock		    "yaw"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "z_dot_dot"
+	  SrcPort		  1
+	  Points		  [25, 0]
+	  Branch {
+	    Points		    [0, 110]
+	    DstBlock		    "Z_dot_dot"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Integrator6"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "roll_dot_dot"
+	  SrcPort		  1
+	  Points		  [19, 0; 0, 365]
+	  DstBlock		  "Integrator"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "pitch_dot_dot"
+	  SrcPort		  1
+	  Points		  [54, 0; 0, 395]
+	  DstBlock		  "Integrator1"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "MATLAB Function"
+	  SrcPort		  2
+	  Points		  [9, 0; 0, -180]
+	  DstBlock		  "z_dot_dot"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "u2"
+	  SrcPort		  1
+	  Points		  [362, 0; 0, -90]
+	  DstBlock		  "roll_dot_dot"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Arm_length"
+	  SrcPort		  1
+	  Points		  [948, 0; 0, -135]
+	  Branch {
+	    Points		    [0, -235]
+	    DstBlock		    "roll_dot_dot"
+	    DstPort		    4
+	  }
+	  Branch {
+	    DstBlock		    "pitch_dot_dot"
+	    DstPort		    4
+	  }
+	}
+	Line {
+	  SrcBlock		  "u3"
+	  SrcPort		  1
+	  Points		  [339, 0; 0, 173; 622, 0; 0, -78]
+	  DstBlock		  "pitch_dot_dot"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "y_dot_dot"
+	  SrcPort		  1
+	  Points		  [96, 0]
+	  Branch {
+	    Points		    [0, 50]
+	    DstBlock		    "Y_dot-dot"
+	    DstPort		    1
+	  }
+	  Branch {
+	    DstBlock		    "Integrator9"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Integrator4"
+	  SrcPort		  1
+	  Points		  [23, 0]
+	  Branch {
+	    DstBlock		    "pitch"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 408; -1497, 0; 0, -259; -18, 0; 0, -759]
+	    DstBlock		    "MATLAB Function"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Integrator7"
+	  SrcPort		  1
+	  Points		  [36, 0; 0, -20]
+	  DstBlock		  "Z"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "yaw_dot_dot"
+	  SrcPort		  1
+	  Points		  [30, 0; 0, 40]
+	  DstBlock		  "Integrator2"
+	  DstPort		  1
+	}
+	Annotation {
+	  Name			  "pitch_dot"
+	  Position		  [1083, 1605]
+	  HorizontalAlignment	  "left"
+	  VerticalAlignment	  "top"
+	}
+	Annotation {
+	  Name			  "roll_dot"
+	  Position		  [1594, 1733]
+	  HorizontalAlignment	  "left"
+	  VerticalAlignment	  "top"
+	}
+      }
+      RTWSystemCode	      "Auto"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      FunctionWithSeparateData off
+      Opaque		      off
+      MaskHideContents	      off
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "GPS_data"
+      Ports		      [4, 1]
+      Position		      [1540, 471, 1720, 604]
+      System {
+	Name			"GPS_data"
+	Location		[-7, 0, 967, 1047]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"150"
+	Block {
+	  BlockType		  Inport
+	  Name			  "x_dot"
+	  Position		  [90, 303, 120, 317]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "y_dot"
+	  Position		  [90, 343, 120, 357]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "z"
+	  Position		  [80, 410, 110, 425]
+	  Orientation		  "down"
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "yaw"
+	  Position		  [125, 455, 155, 470]
+	  Orientation		  "down"
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator"
+	  Ports			  [1, 1]
+	  Position		  [315, 315, 345, 345]
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator1"
+	  Ports			  [1, 1]
+	  Position		  [310, 365, 340, 395]
+	}
+	Block {
+	  BlockType		  Memory
+	  Name			  "Memory"
+	  Position		  [435, 530, 465, 560]
+	  Orientation		  "left"
+	  X0			  "30"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Send_GPS"
+	  Ports			  [7, 2]
+	  Position		  [385, 347, 485, 493]
+	  PermitHierarchicalResolution "ParametersOnly"
+	  TreatAsAtomicUnit	  on
+	  MaskType		  "Stateflow"
+	  MaskDescription	  "Embedded MATLAB block"
+	  MaskSelfModifiable	  on
+	  MaskDisplay		  "bgColor = Simulink.Root.ColorString2Rgb(get_param(gcbh, 'BackgroundColor')); image(imread('private/"
+	  "eml_membrane_16.png','png','BackgroundColor',bgColor(1:3)),'center'); disp([10 10 'fcn']);"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  off
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "normalized"
+	  System {
+	    Name		    "Send_GPS"
+	    Location		    [223, 338, 826, 833]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "x"
+	      Position		      [20, 101, 40, 119]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "y"
+	      Position		      [20, 136, 40, 154]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "z"
+	      Position		      [20, 171, 40, 189]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "x_dot"
+	      Position		      [20, 206, 40, 224]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "y_dot"
+	      Position		      [20, 246, 40, 264]
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "yaw"
+	      Position		      [20, 281, 40, 299]
+	      Port		      "6"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "lat_before"
+	      Position		      [20, 316, 40, 334]
+	      Port		      "7"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      " Demux "
+	      Ports		      [1, 1]
+	      Position		      [270, 230, 320, 270]
+	      Outputs		      "1"
+	    }
+	    Block {
+	      BlockType		      S-Function
+	      Name		      " SFunction "
+	      Tag		      "Stateflow S-Function DoAero_2008a 4"
+	      Ports		      [7, 3]
+	      Position		      [180, 110, 230, 270]
+	      FunctionName	      "sf_sfun"
+	      PortCounts	      "[7 3]"
+	      EnableBusSupport	      on
+	      Port {
+		PortNumber		2
+		Name			"A"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		3
+		Name			"A_lat"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Terminator
+	      Name		      " Terminator "
+	      Position		      [460, 241, 480, 259]
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "A"
+	      Position		      [460, 101, 480, 119]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "A_lat"
+	      Position		      [460, 136, 480, 154]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "x"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "y"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "z"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "x_dot"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      4
+	    }
+	    Line {
+	      SrcBlock		      "y_dot"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      5
+	    }
+	    Line {
+	      SrcBlock		      "yaw"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      6
+	    }
+	    Line {
+	      SrcBlock		      "lat_before"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      7
+	    }
+	    Line {
+	      Name		      "A"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      2
+	      DstBlock		      "A"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "A_lat"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      3
+	      DstBlock		      "A_lat"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      " Demux "
+	      SrcPort		      1
+	      DstBlock		      " Terminator "
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      " SFunction "
+	      SrcPort		      1
+	      DstBlock		      " Demux "
+	      DstPort		      1
+	    }
+	  }
+	  RTWSystemCode		  "Auto"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  MaskHideContents	  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "GPS_data"
+	  Position		  [560, 378, 590, 392]
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "Integrator"
+	  SrcPort		  1
+	  Points		  [17, 0; 0, 30]
+	  DstBlock		  "Send_GPS"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Integrator1"
+	  SrcPort		  1
+	  DstBlock		  "Send_GPS"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Send_GPS"
+	  SrcPort		  1
+	  DstBlock		  "GPS_data"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "yaw"
+	  SrcPort		  1
+	  Points		  [0, 1; 231, 0]
+	  DstBlock		  "Send_GPS"
+	  DstPort		  6
+	}
+	Line {
+	  SrcBlock		  "z"
+	  SrcPort		  1
+	  Points		  [0, 17; 274, 0; 0, -47]
+	  DstBlock		  "Send_GPS"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "Memory"
+	  SrcPort		  1
+	  Points		  [-59, 0; 0, -65]
+	  DstBlock		  "Send_GPS"
+	  DstPort		  7
+	}
+	Line {
+	  SrcBlock		  "Send_GPS"
+	  SrcPort		  2
+	  Points		  [9, 0; 0, 85]
+	  DstBlock		  "Memory"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "x_dot"
+	  SrcPort		  1
+	  Points		  [77, 0]
+	  Branch {
+	    Points		    [92, 0; 0, 20]
+	    DstBlock		    "Integrator"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 110]
+	    DstBlock		    "Send_GPS"
+	    DstPort		    4
+	  }
+	}
+	Line {
+	  SrcBlock		  "y_dot"
+	  SrcPort		  1
+	  Points		  [9, 0]
+	  Branch {
+	    Points		    [0, 78; 229, 0; 0, 12]
+	    DstBlock		    "Send_GPS"
+	    DstPort		    5
+	  }
+	  Branch {
+	    Points		    [105, 0; 0, 30]
+	    DstBlock		    "Integrator1"
+	    DstPort		    1
+	  }
+	}
+      }
+      RTWSystemCode	      "Auto"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      FunctionWithSeparateData off
+      Opaque		      off
+      MaskHideContents	      off
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "IMU_data"
+      Ports		      [11, 1]
+      Position		      [1540, 287, 1720, 423]
+      System {
+	Name			"IMU_data"
+	Location		[-7, 0, 967, 1047]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "height"
+	  Position		  [225, 613, 255, 627]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "roll"
+	  Position		  [225, 435, 255, 450]
+	  Orientation		  "down"
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "vertical_velocity"
+	  Position		  [225, 648, 255, 662]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "roll_rate"
+	  Position		  [225, 543, 255, 557]
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "yaw_rate"
+	  Position		  [225, 578, 255, 592]
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "pitch"
+	  Position		  [225, 395, 255, 410]
+	  Orientation		  "down"
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "ax"
+	  Position		  [225, 683, 255, 697]
+	  Port			  "7"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "ay"
+	  Position		  [225, 718, 255, 732]
+	  Port			  "8"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "az"
+	  Position		  [225, 753, 255, 767]
+	  Port			  "9"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "yaw"
+	  Position		  [225, 465, 255, 480]
+	  Orientation		  "down"
+	  Port			  "10"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "pitch_rate"
+	  Position		  [225, 505, 255, 520]
+	  Orientation		  "down"
+	  Port			  "11"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  BusCreator
+	  Name			  "Bus\nCreator"
+	  Ports			  [11, 1]
+	  Position		  [560, 625, 570, 785]
+	  ShowName		  off
+	  Inputs		  "11"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "Data Preperation"
+	  Ports			  [11, 11]
+	  Position		  [315, 387, 425, 783]
+	  PermitHierarchicalResolution "ParametersOnly"
+	  TreatAsAtomicUnit	  on
+	  MaskType		  "Stateflow"
+	  MaskDescription	  "Embedded MATLAB block"
+	  MaskSelfModifiable	  on
+	  MaskDisplay		  "bgColor = Simulink.Root.ColorString2Rgb(get_param(gcbh, 'BackgroundColor')); image(imread('private/"
+	  "eml_membrane_16.png','png','BackgroundColor',bgColor(1:3)),'center'); disp([10 10 'fcn']);"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  off
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "normalized"
+	  Port {
+	    PortNumber		    1
+	    Name		    "pitch"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    2
+	    Name		    "roll"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    3
+	    Name		    "yaw"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    4
+	    Name		    "dpitch"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    5
+	    Name		    "droll"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    6
+	    Name		    "dyaw"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    7
+	    Name		    "vd"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    8
+	    Name		    "h"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    9
+	    Name		    "an"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    10
+	    Name		    "ae"
+	    PropagatedSignals	    "ae"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    11
+	    Name		    "ad"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  System {
+	    Name		    "Data Preperation"
+	    Location		    [223, 338, 826, 833]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "pitch_angle"
+	      Position		      [20, 101, 40, 119]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "roll_angle"
+	      Position		      [20, 136, 40, 154]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "yaw_angle"
+	      Position		      [20, 171, 40, 189]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "pitch_rate"
+	      Position		      [20, 206, 40, 224]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "roll_rate"
+	      Position		      [20, 246, 40, 264]
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "yaw_rate"
+	      Position		      [20, 281, 40, 299]
+	      Port		      "6"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "height"
+	      Position		      [20, 316, 40, 334]
+	      Port		      "7"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "vertical_velocity"
+	      Position		      [20, 351, 40, 369]
+	      Port		      "8"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "ax"
+	      Position		      [20, 386, 40, 404]
+	      Port		      "9"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "ay"
+	      Position		      [20, 426, 40, 444]
+	      Port		      "10"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "az"
+	      Position		      [20, 461, 40, 479]
+	      Port		      "11"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      " Demux "
+	      Ports		      [1, 1]
+	      Position		      [270, 530, 320, 570]
+	      Outputs		      "1"
+	    }
+	    Block {
+	      BlockType		      S-Function
+	      Name		      " SFunction "
+	      Tag		      "Stateflow S-Function DoAero_2008a 2"
+	      Ports		      [11, 12]
+	      Position		      [180, 110, 230, 370]
+	      FunctionName	      "sf_sfun"
+	      PortCounts	      "[11 12]"
+	      EnableBusSupport	      on
+	      Port {
+		PortNumber		2
+		Name			"pitch"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		3
+		Name			"roll"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		4
+		Name			"yaw"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		5
+		Name			"dpitch"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		6
+		Name			"droll"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		7
+		Name			"dyaw"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		8
+		Name			"vd"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		9
+		Name			"h"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		10
+		Name			"an"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		11
+		Name			"ae"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	      Port {
+		PortNumber		12
+		Name			"ad"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Terminator
+	      Name		      " Terminator "
+	      Position		      [460, 541, 480, 559]
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "pitch"
+	      Position		      [460, 101, 480, 119]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "roll"
+	      Position		      [460, 136, 480, 154]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "yaw"
+	      Position		      [460, 171, 480, 189]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "dpitch"
+	      Position		      [460, 206, 480, 224]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "droll"
+	      Position		      [460, 246, 480, 264]
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "dyaw"
+	      Position		      [460, 281, 480, 299]
+	      Port		      "6"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "vd"
+	      Position		      [460, 316, 480, 334]
+	      Port		      "7"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "h"
+	      Position		      [460, 351, 480, 369]
+	      Port		      "8"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "an"
+	      Position		      [460, 386, 480, 404]
+	      Port		      "9"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "ae"
+	      Position		      [460, 426, 480, 444]
+	      Port		      "10"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "ad"
+	      Position		      [460, 461, 480, 479]
+	      Port		      "11"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "pitch_angle"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "roll_angle"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "yaw_angle"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "pitch_rate"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      4
+	    }
+	    Line {
+	      SrcBlock		      "roll_rate"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      5
+	    }
+	    Line {
+	      SrcBlock		      "yaw_rate"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      6
+	    }
+	    Line {
+	      SrcBlock		      "height"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      7
+	    }
+	    Line {
+	      SrcBlock		      "vertical_velocity"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      8
+	    }
+	    Line {
+	      SrcBlock		      "ax"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      9
+	    }
+	    Line {
+	      SrcBlock		      "ay"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      10
+	    }
+	    Line {
+	      SrcBlock		      "az"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      11
+	    }
+	    Line {
+	      Name		      "pitch"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      2
+	      DstBlock		      "pitch"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "roll"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      3
+	      DstBlock		      "roll"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "yaw"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      4
+	      DstBlock		      "yaw"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "dpitch"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      5
+	      DstBlock		      "dpitch"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "droll"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      6
+	      DstBlock		      "droll"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "dyaw"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      7
+	      DstBlock		      "dyaw"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "vd"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      8
+	      DstBlock		      "vd"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "h"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      9
+	      DstBlock		      "h"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "an"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      10
+	      DstBlock		      "an"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "ae"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      11
+	      DstBlock		      "ae"
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "ad"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      12
+	      DstBlock		      "ad"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      " Demux "
+	      SrcPort		      1
+	      DstBlock		      " Terminator "
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      " SFunction "
+	      SrcPort		      1
+	      DstBlock		      " Demux "
+	      DstPort		      1
+	    }
+	  }
+	  RTWSystemCode		  "Auto"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  MaskHideContents	  off
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "MATLAB Function"
+	  Ports			  [13, 1]
+	  Position		  [760, 190, 895, 590]
+	  PermitHierarchicalResolution "ParametersOnly"
+	  TreatAsAtomicUnit	  on
+	  MaskType		  "Stateflow"
+	  MaskDescription	  "Embedded MATLAB block"
+	  MaskSelfModifiable	  on
+	  MaskDisplay		  "bgColor = Simulink.Root.ColorString2Rgb(get_param(gcbh, 'BackgroundColor')); image(imread('private/"
+	  "eml_membrane_16.png','png','BackgroundColor',bgColor(1:3)),'center'); disp([10 10 'fcn']);"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  off
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "normalized"
+	  System {
+	    Name		    "MATLAB Function"
+	    Location		    [223, 338, 826, 833]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "pitch"
+	      Position		      [20, 101, 40, 119]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "roll"
+	      Position		      [20, 136, 40, 154]
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "yaw"
+	      Position		      [20, 171, 40, 189]
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "dpitch"
+	      Position		      [20, 206, 40, 224]
+	      Port		      "4"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "droll"
+	      Position		      [20, 246, 40, 264]
+	      Port		      "5"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "dyaw"
+	      Position		      [20, 281, 40, 299]
+	      Port		      "6"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "vd"
+	      Position		      [20, 316, 40, 334]
+	      Port		      "7"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "h"
+	      Position		      [20, 351, 40, 369]
+	      Port		      "8"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "an"
+	      Position		      [20, 386, 40, 404]
+	      Port		      "9"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "ae"
+	      Position		      [20, 426, 40, 444]
+	      Port		      "10"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "ad"
+	      Position		      [20, 461, 40, 479]
+	      Port		      "11"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "sign"
+	      Position		      [20, 496, 40, 514]
+	      Port		      "12"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "cnt"
+	      Position		      [20, 531, 40, 549]
+	      Port		      "13"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      " Demux "
+	      Ports		      [1, 1]
+	      Position		      [270, 230, 320, 270]
+	      Outputs		      "1"
+	    }
+	    Block {
+	      BlockType		      S-Function
+	      Name		      " SFunction "
+	      Tag		      "Stateflow S-Function DoAero_2008a 3"
+	      Ports		      [13, 2]
+	      Position		      [180, 110, 230, 390]
+	      FunctionName	      "sf_sfun"
+	      PortCounts	      "[13 2]"
+	      EnableBusSupport	      on
+	      Port {
+		PortNumber		2
+		Name			"N1_data"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Terminator
+	      Name		      " Terminator "
+	      Position		      [460, 241, 480, 259]
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "N1_data"
+	      Position		      [460, 101, 480, 119]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "pitch"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      "roll"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      2
+	    }
+	    Line {
+	      SrcBlock		      "yaw"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      3
+	    }
+	    Line {
+	      SrcBlock		      "dpitch"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      4
+	    }
+	    Line {
+	      SrcBlock		      "droll"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      5
+	    }
+	    Line {
+	      SrcBlock		      "dyaw"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      6
+	    }
+	    Line {
+	      SrcBlock		      "vd"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      7
+	    }
+	    Line {
+	      SrcBlock		      "h"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      8
+	    }
+	    Line {
+	      SrcBlock		      "an"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      9
+	    }
+	    Line {
+	      SrcBlock		      "ae"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      10
+	    }
+	    Line {
+	      SrcBlock		      "ad"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      11
+	    }
+	    Line {
+	      SrcBlock		      "sign"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      12
+	    }
+	    Line {
+	      SrcBlock		      "cnt"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      13
+	    }
+	    Line {
+	      Name		      "N1_data"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      2
+	      DstBlock		      "N1_data"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      " Demux "
+	      SrcPort		      1
+	      DstBlock		      " Terminator "
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      " SFunction "
+	      SrcPort		      1
+	      DstBlock		      " Demux "
+	      DstPort		      1
+	    }
+	  }
+	  RTWSystemCode		  "Auto"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  MaskHideContents	  off
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "MATLAB Function7"
+	  Ports			  [1, 1]
+	  Position		  [670, 633, 710, 657]
+	  PermitHierarchicalResolution "ParametersOnly"
+	  TreatAsAtomicUnit	  on
+	  MaskType		  "Stateflow"
+	  MaskDescription	  "Embedded MATLAB block"
+	  MaskSelfModifiable	  on
+	  MaskDisplay		  "bgColor = Simulink.Root.ColorString2Rgb(get_param(gcbh, 'BackgroundColor')); image(imread('private/"
+	  "eml_membrane_16.png','png','BackgroundColor',bgColor(1:3)),'center'); disp([10 10 'fcn']);"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  off
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "normalized"
+	  Port {
+	    PortNumber		    1
+	    Name		    "cnt"
+	    PropagatedSignals	    "y1"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  System {
+	    Name		    "MATLAB Function7"
+	    Location		    [223, 338, 826, 833]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "cnt"
+	      Position		      [20, 101, 40, 119]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      " Demux "
+	      Ports		      [1, 1]
+	      Position		      [270, 230, 320, 270]
+	      Outputs		      "1"
+	    }
+	    Block {
+	      BlockType		      S-Function
+	      Name		      " SFunction "
+	      Tag		      "Stateflow S-Function DoAero_2008a 14"
+	      Ports		      [1, 2]
+	      Position		      [180, 100, 230, 160]
+	      FunctionName	      "sf_sfun"
+	      PortCounts	      "[1 2]"
+	      EnableBusSupport	      on
+	      Port {
+		PortNumber		2
+		Name			"y1"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Terminator
+	      Name		      " Terminator "
+	      Position		      [460, 241, 480, 259]
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "y1"
+	      Position		      [460, 101, 480, 119]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "cnt"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "y1"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      2
+	      DstBlock		      "y1"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      " Demux "
+	      SrcPort		      1
+	      DstBlock		      " Terminator "
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      " SFunction "
+	      SrcPort		      1
+	      DstBlock		      " Demux "
+	      DstPort		      1
+	    }
+	  }
+	  RTWSystemCode		  "Auto"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  MaskHideContents	  off
+	}
+	Block {
+	  BlockType		  Memory
+	  Name			  "Memory"
+	  Position		  [740, 630, 770, 660]
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "To Workspace"
+	  Ports			  [1]
+	  Position		  [770, 690, 800, 720]
+	  VariableName		  "packed_data"
+	  MaxDataPoints		  "inf"
+	  FixptAsFi		  on
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  FrameConversion
+	  Name			  "tpc7e70675_2f2d_4e91_9930_d3563ddb5c5f"
+	  Ports			  [1, 1]
+	  Position		  [685, 690, 745, 720]
+	  ShowName		  off
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "vd sign"
+	  Ports			  [1, 1]
+	  Position		  [640, 559, 670, 581]
+	  PermitHierarchicalResolution "ParametersOnly"
+	  TreatAsAtomicUnit	  on
+	  MaskType		  "Stateflow"
+	  MaskDescription	  "Embedded MATLAB block"
+	  MaskSelfModifiable	  on
+	  MaskDisplay		  "bgColor = Simulink.Root.ColorString2Rgb(get_param(gcbh, 'BackgroundColor')); image(imread('private/"
+	  "eml_membrane_16.png','png','BackgroundColor',bgColor(1:3)),'center'); disp([10 10 'fcn']);"
+	  MaskIconFrame		  on
+	  MaskIconOpaque	  off
+	  MaskIconRotate	  "none"
+	  MaskIconUnits		  "normalized"
+	  Port {
+	    PortNumber		    1
+	    Name		    "sign"
+	    PropagatedSignals	    "y"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  System {
+	    Name		    "vd sign"
+	    Location		    [223, 338, 826, 833]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "u"
+	      Position		      [20, 101, 40, 119]
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Demux
+	      Name		      " Demux "
+	      Ports		      [1, 1]
+	      Position		      [270, 230, 320, 270]
+	      Outputs		      "1"
+	    }
+	    Block {
+	      BlockType		      S-Function
+	      Name		      " SFunction "
+	      Tag		      "Stateflow S-Function DoAero_2008a 1"
+	      Ports		      [1, 2]
+	      Position		      [180, 100, 230, 160]
+	      FunctionName	      "sf_sfun"
+	      PortCounts	      "[1 2]"
+	      EnableBusSupport	      on
+	      Port {
+		PortNumber		2
+		Name			"y"
+		RTWStorageClass		"Auto"
+		DataLoggingNameMode	"SignalName"
+	      }
+	    }
+	    Block {
+	      BlockType		      Terminator
+	      Name		      " Terminator "
+	      Position		      [460, 241, 480, 259]
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "y"
+	      Position		      [460, 101, 480, 119]
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      SrcBlock		      "u"
+	      SrcPort		      1
+	      DstBlock		      " SFunction "
+	      DstPort		      1
+	    }
+	    Line {
+	      Name		      "y"
+	      Labels		      [0, 0]
+	      SrcBlock		      " SFunction "
+	      SrcPort		      2
+	      DstBlock		      "y"
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      " Demux "
+	      SrcPort		      1
+	      DstBlock		      " Terminator "
+	      DstPort		      1
+	    }
+	    Line {
+	      SrcBlock		      " SFunction "
+	      SrcPort		      1
+	      DstBlock		      " Demux "
+	      DstPort		      1
+	    }
+	  }
+	  RTWSystemCode		  "Auto"
+	  MinAlgLoopOccurrences	  off
+	  PropExecContextOutsideSubsystem off
+	  FunctionWithSeparateData off
+	  Opaque		  off
+	  MaskHideContents	  off
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "IMU_data"
+	  Position		  [960, 383, 990, 397]
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  Name			  "droll"
+	  SrcBlock		  "Data Preperation"
+	  SrcPort		  5
+	  Points		  [48, 0]
+	  Branch {
+	    Labels		    [-1, 0]
+	    Points		    [0, -69; 167, 0; 0, -151]
+	    DstBlock		    "MATLAB Function"
+	    DstPort		    5
+	  }
+	  Branch {
+	    Points		    [0, 140]
+	    DstBlock		    "Bus\nCreator"
+	    DstPort		    5
+	  }
+	}
+	Line {
+	  Name			  "ae"
+	  SrcBlock		  "Data Preperation"
+	  SrcPort		  10
+	  Points		  [43, 0; 0, 4]
+	  Branch {
+	    Labels		    [-1, 0]
+	    Points		    [75, 0; 0, -262; 127, 0; 0, 13]
+	    DstBlock		    "MATLAB Function"
+	    DstPort		    10
+	  }
+	  Branch {
+	    Points		    [0, 36]
+	    DstBlock		    "Bus\nCreator"
+	    DstPort		    10
+	  }
+	}
+	Line {
+	  SrcBlock		  "ax"
+	  SrcPort		  1
+	  DstBlock		  "Data Preperation"
+	  DstPort		  9
+	}
+	Line {
+	  Name			  "dyaw"
+	  SrcBlock		  "Data Preperation"
+	  SrcPort		  6
+	  Points		  [81, 0]
+	  Branch {
+	    Labels		    [-1, 0]
+	    Points		    [0, -66; 159, 0; 0, -159]
+	    DstBlock		    "MATLAB Function"
+	    DstPort		    6
+	  }
+	  Branch {
+	    Points		    [9, 0; 0, 120]
+	    DstBlock		    "Bus\nCreator"
+	    DstPort		    6
+	  }
+	}
+	Line {
+	  Name			  "vd"
+	  SrcBlock		  "Data Preperation"
+	  SrcPort		  7
+	  Points		  [25, 0]
+	  Branch {
+	    Points		    [0, -21]
+	    Branch {
+	      Labels		      [-1, 0]
+	      Points		      [0, -209]
+	      DstBlock		      "MATLAB Function"
+	      DstPort		      7
+	    }
+	    Branch {
+	      Points		      [129, 0; 0, -29]
+	      DstBlock		      "vd sign"
+	      DstPort		      1
+	    }
+	  }
+	  Branch {
+	    Points		    [73, 0; 0, 100]
+	    DstBlock		    "Bus\nCreator"
+	    DstPort		    7
+	  }
+	}
+	Line {
+	  Name			  "h"
+	  SrcBlock		  "Data Preperation"
+	  SrcPort		  8
+	  Points		  [42, 0]
+	  Branch {
+	    Labels		    [-1, 0]
+	    Points		    [0, -143; 207, 0; 0, -92]
+	    DstBlock		    "MATLAB Function"
+	    DstPort		    8
+	  }
+	  Branch {
+	    Points		    [21, 0; 0, 80]
+	    DstBlock		    "Bus\nCreator"
+	    DstPort		    8
+	  }
+	}
+	Line {
+	  Name			  "yaw"
+	  SrcBlock		  "Data Preperation"
+	  SrcPort		  3
+	  Points		  [33, 0; 0, -6; 41, 0]
+	  Branch {
+	    Labels		    [3, 0]
+	    Points		    [8, 0; 0, -204]
+	    DstBlock		    "MATLAB Function"
+	    DstPort		    3
+	  }
+	  Branch {
+	    Points		    [0, 186]
+	    DstBlock		    "Bus\nCreator"
+	    DstPort		    3
+	  }
+	}
+	Line {
+	  Name			  "an"
+	  SrcBlock		  "Data Preperation"
+	  SrcPort		  9
+	  Points		  [12, 0]
+	  Branch {
+	    Labels		    [-1, 0]
+	    Points		    [0, -240]
+	    DstBlock		    "MATLAB Function"
+	    DstPort		    9
+	  }
+	  Branch {
+	    Points		    [7, 0; 0, 60]
+	    DstBlock		    "Bus\nCreator"
+	    DstPort		    9
+	  }
+	}
+	Line {
+	  Name			  "dpitch"
+	  SrcBlock		  "Data Preperation"
+	  SrcPort		  4
+	  Points		  [19, 0; 0, -10; 67, 0]
+	  Branch {
+	    Labels		    [-1, 0]
+	    Points		    [42, 0; 0, -205]
+	    DstBlock		    "MATLAB Function"
+	    DstPort		    4
+	  }
+	  Branch {
+	    Points		    [0, 170]
+	    DstBlock		    "Bus\nCreator"
+	    DstPort		    4
+	  }
+	}
+	Line {
+	  Name			  "sign"
+	  Labels		  [-1, 0]
+	  SrcBlock		  "vd sign"
+	  SrcPort		  1
+	  Points		  [35, 0; 0, -30]
+	  DstBlock		  "MATLAB Function"
+	  DstPort		  12
+	}
+	Line {
+	  Name			  "cnt"
+	  SrcBlock		  "MATLAB Function7"
+	  SrcPort		  1
+	  Points		  [10, 0]
+	  Branch {
+	    Labels		    [3, 0]
+	    Points		    [0, -21; -36, 0; 0, -40; 36, 0; 0, -14]
+	    DstBlock		    "MATLAB Function"
+	    DstPort		    13
+	  }
+	  Branch {
+	    DstBlock		    "Memory"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  Name			  "roll"
+	  SrcBlock		  "Data Preperation"
+	  SrcPort		  2
+	  Points		  [70, 0]
+	  Branch {
+	    Labels		    [2, 0]
+	    Points		    [0, -205]
+	    DstBlock		    "MATLAB Function"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [1, 0; 0, 200]
+	    DstBlock		    "Bus\nCreator"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "ay"
+	  SrcPort		  1
+	  DstBlock		  "Data Preperation"
+	  DstPort		  10
+	}
+	Line {
+	  Name			  "ad"
+	  SrcBlock		  "Data Preperation"
+	  SrcPort		  11
+	  Points		  [30, 0]
+	  Branch {
+	    Labels		    [-1, 0]
+	    Points		    [0, -224; 240, 0; 0, -26]
+	    DstBlock		    "MATLAB Function"
+	    DstPort		    11
+	  }
+	  Branch {
+	    Points		    [0, 20]
+	    DstBlock		    "Bus\nCreator"
+	    DstPort		    11
+	  }
+	}
+	Line {
+	  Name			  "pitch"
+	  SrcBlock		  "Data Preperation"
+	  SrcPort		  1
+	  Points		  [60, 0]
+	  Branch {
+	    Labels		    [2, 0]
+	    Points		    [0, -200]
+	    DstBlock		    "MATLAB Function"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [114, 0; 0, 203; -68, 0; 0, 17]
+	    DstBlock		    "Bus\nCreator"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "az"
+	  SrcPort		  1
+	  DstBlock		  "Data Preperation"
+	  DstPort		  11
+	}
+	Line {
+	  SrcBlock		  "Memory"
+	  SrcPort		  1
+	  Points		  [14, 0; 0, 35; -147, 0; 0, -35]
+	  DstBlock		  "MATLAB Function7"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "yaw_rate"
+	  SrcPort		  1
+	  DstBlock		  "Data Preperation"
+	  DstPort		  6
+	}
+	Line {
+	  SrcBlock		  "height"
+	  SrcPort		  1
+	  DstBlock		  "Data Preperation"
+	  DstPort		  7
+	}
+	Line {
+	  SrcBlock		  "yaw"
+	  SrcPort		  1
+	  Points		  [0, 8; 60, 0]
+	  DstBlock		  "Data Preperation"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "pitch"
+	  SrcPort		  1
+	  Points		  [0, 10; 60, 0]
+	  DstBlock		  "Data Preperation"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "roll_rate"
+	  SrcPort		  1
+	  DstBlock		  "Data Preperation"
+	  DstPort		  5
+	}
+	Line {
+	  SrcBlock		  "pitch_rate"
+	  SrcPort		  1
+	  Points		  [0, 7; 60, 0]
+	  DstBlock		  "Data Preperation"
+	  DstPort		  4
+	}
+	Line {
+	  SrcBlock		  "vertical_velocity"
+	  SrcPort		  1
+	  DstBlock		  "Data Preperation"
+	  DstPort		  8
+	}
+	Line {
+	  SrcBlock		  "roll"
+	  SrcPort		  1
+	  Points		  [0, 3; 60, 0]
+	  DstBlock		  "Data Preperation"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "MATLAB Function"
+	  SrcPort		  1
+	  DstBlock		  "IMU_data"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Bus\nCreator"
+	  SrcPort		  1
+	  DstBlock		  "tpc7e70675_2f2d_4e91_9930_d3563ddb5c5f"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "tpc7e70675_2f2d_4e91_9930_d3563ddb5c5f"
+	  SrcPort		  1
+	  DstBlock		  "To Workspace"
+	  DstPort		  1
+	}
+      }
+      RTWSystemCode	      "Auto"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      FunctionWithSeparateData off
+      Opaque		      off
+      MaskHideContents	      off
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace"
+      Ports		      [1]
+      Position		      [1840, 340, 1870, 370]
+      VariableName	      "IMU_data"
+      MaxDataPoints	      "inf"
+      FixptAsFi		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace1"
+      Ports		      [1]
+      Position		      [1840, 525, 1870, 555]
+      VariableName	      "GPS_data"
+      MaxDataPoints	      "inf"
+      FixptAsFi		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "propeller_lift_force"
+      Ports		      [4, 4]
+      Position		      [920, 241, 1055, 424]
+      PermitHierarchicalResolution "ParametersOnly"
+      TreatAsAtomicUnit	      on
+      MaskType		      "Stateflow"
+      MaskDescription	      "Embedded MATLAB block"
+      MaskSelfModifiable      on
+      MaskDisplay	      "bgColor = Simulink.Root.ColorString2Rgb(get_param(gcbh, 'BackgroundColor')); image(imread('pr"
+      "ivate/eml_membrane_16.png','png','BackgroundColor',bgColor(1:3)),'center'); disp([10 10 'fcn']);"
+      MaskIconFrame	      on
+      MaskIconOpaque	      off
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "normalized"
+      System {
+	Name			"propeller_lift_force"
+	Location		[223, 338, 826, 833]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "motor1_pwm"
+	  Position		  [20, 101, 40, 119]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "motor2_pwm"
+	  Position		  [20, 136, 40, 154]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "motor3_pwm"
+	  Position		  [20, 171, 40, 189]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "motor4_pwm"
+	  Position		  [20, 206, 40, 224]
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Demux
+	  Name			  " Demux "
+	  Ports			  [1, 1]
+	  Position		  [270, 280, 320, 320]
+	  Outputs		  "1"
+	}
+	Block {
+	  BlockType		  S-Function
+	  Name			  " SFunction "
+	  Tag			  "Stateflow S-Function DoAero_2008a 5"
+	  Ports			  [4, 5]
+	  Position		  [180, 105, 230, 225]
+	  FunctionName		  "sf_sfun"
+	  PortCounts		  "[4 5]"
+	  EnableBusSupport	  on
+	  Port {
+	    PortNumber		    2
+	    Name		    "u1"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    3
+	    Name		    "u2"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    4
+	    Name		    "u3"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	  Port {
+	    PortNumber		    5
+	    Name		    "u4"
+	    RTWStorageClass	    "Auto"
+	    DataLoggingNameMode	    "SignalName"
+	  }
+	}
+	Block {
+	  BlockType		  Terminator
+	  Name			  " Terminator "
+	  Position		  [460, 291, 480, 309]
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "u1"
+	  Position		  [460, 101, 480, 119]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "u2"
+	  Position		  [460, 136, 480, 154]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "u3"
+	  Position		  [460, 171, 480, 189]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "u4"
+	  Position		  [460, 206, 480, 224]
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "motor1_pwm"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "motor2_pwm"
+	  SrcPort		  1
+	  Points		  [120, 0]
+	  DstBlock		  " SFunction "
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "motor3_pwm"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "motor4_pwm"
+	  SrcPort		  1
+	  DstBlock		  " SFunction "
+	  DstPort		  4
+	}
+	Line {
+	  Name			  "u1"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  2
+	  DstBlock		  "u1"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "u2"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  3
+	  DstBlock		  "u2"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "u3"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  4
+	  DstBlock		  "u3"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "u4"
+	  Labels		  [0, 0]
+	  SrcBlock		  " SFunction "
+	  SrcPort		  5
+	  DstBlock		  "u4"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  " Demux "
+	  SrcPort		  1
+	  DstBlock		  " Terminator "
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  " SFunction "
+	  SrcPort		  1
+	  DstBlock		  " Demux "
+	  DstPort		  1
+	}
+      }
+      RTWSystemCode	      "Auto"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      FunctionWithSeparateData off
+      Opaque		      off
+      MaskHideContents	      off
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "property\n"
+      Ports		      [0, 5]
+      Position		      [960, 459, 1020, 641]
+      System {
+	Name			"property\n"
+	Location		[-7, 0, 967, 1047]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Constant
+	  Name			  "Arm_length_"
+	  Position		  [45, 310, 95, 340]
+	  Value			  "0.228"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "ineretia_yy"
+	  Position		  [20, 157, 120, 203]
+	  Value			  "2.5955e-4"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "inertia_xx"
+	  Position		  [35, 72, 135, 118]
+	  Value			  "2.754e-4"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "inertia_zz"
+	  Position		  [20, 232, 120, 278]
+	  Value			  "5.7824e-5"
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "mass"
+	  Position		  [45, 27, 90, 53]
+	  Value			  "1.17"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "m"
+	  Position		  [285, 23, 315, 37]
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "I_xx"
+	  Position		  [285, 73, 315, 87]
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "I_yy"
+	  Position		  [285, 123, 315, 137]
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "I_zz"
+	  Position		  [285, 173, 315, 187]
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Arm_length\n"
+	  Position		  [285, 223, 315, 237]
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  SrcBlock		  "inertia_zz"
+	  SrcPort		  1
+	  Points		  [94, 0; 0, -75]
+	  DstBlock		  "I_zz"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Arm_length_"
+	  SrcPort		  1
+	  Points		  [150, 0; 0, -95]
+	  DstBlock		  "Arm_length\n"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "ineretia_yy"
+	  SrcPort		  1
+	  Points		  [87, 0; 0, -50]
+	  DstBlock		  "I_yy"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "mass"
+	  SrcPort		  1
+	  Points		  [160, 0; 0, -10]
+	  DstBlock		  "m"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "inertia_xx"
+	  SrcPort		  1
+	  Points		  [26, 0; 0, -15]
+	  DstBlock		  "I_xx"
+	  DstPort		  1
+	}
+      }
+      RTWSystemCode	      "Auto"
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      FunctionWithSeparateData off
+      Opaque		      off
+      MaskHideContents	      off
+    }
+    Block {
+      BlockType		      FrameConversion
+      Name		      "tp4a022996_4e50_4f71_abf1_650af0ce02b3"
+      Ports		      [1, 1]
+      Position		      [1755, 525, 1815, 555]
+      ShowName		      off
+    }
+    Block {
+      BlockType		      FrameConversion
+      Name		      "tpeae312dc_123c_4cdc_ad61_e4d98a64dd9b"
+      Ports		      [1, 1]
+      Position		      [1755, 340, 1815, 370]
+      ShowName		      off
+    }
+    Line {
+      SrcBlock		      "Dynamic model"
+      SrcPort		      9
+      Points		      [89, 0; 0, -130]
+      DstBlock		      "IMU_data"
+      DstPort		      6
+    }
+    Line {
+      SrcBlock		      "Dynamic model"
+      SrcPort		      3
+      Points		      [31, 0]
+      Branch {
+	Points			[0, 261; 218, 0; 0, -11]
+	DstBlock		"GPS_data"
+	DstPort			3
+      }
+      Branch {
+	DstBlock		"IMU_data"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Dynamic model"
+      SrcPort		      4
+      Points		      [22, 0; 0, -20]
+      DstBlock		      "IMU_data"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Dynamic model"
+      SrcPort		      6
+      Points		      [64, 0; 0, -70]
+      DstBlock		      "IMU_data"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Dynamic model"
+      SrcPort		      5
+      Points		      [243, 0; 0, -30]
+      DstBlock		      "IMU_data"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "Dynamic model"
+      SrcPort		      10
+      Points		      [241, 0; 0, -110]
+      DstBlock		      "IMU_data"
+      DstPort		      11
+    }
+    Line {
+      SrcBlock		      "Dynamic model"
+      SrcPort		      7
+      Points		      [202, 0; 0, -80]
+      DstBlock		      "IMU_data"
+      DstPort		      5
+    }
+    Line {
+      SrcBlock		      "Dynamic model"
+      SrcPort		      8
+      Points		      [52, 0]
+      Branch {
+	Points			[0, 135]
+	DstBlock		"GPS_data"
+	DstPort			4
+      }
+      Branch {
+	Points			[81, 0; 0, -60]
+	DstBlock		"IMU_data"
+	DstPort			10
+      }
+    }
+    Line {
+      SrcBlock		      "Dynamic model"
+      SrcPort		      11
+      Points		      [46, 0; 0, -45; 181, 0; 0, -120; 27, 0; 0, -15]
+      DstBlock		      "IMU_data"
+      DstPort		      7
+    }
+    Line {
+      SrcBlock		      "Dynamic model"
+      SrcPort		      12
+      Points		      [213, 0; 0, -200]
+      DstBlock		      "IMU_data"
+      DstPort		      8
+    }
+    Line {
+      SrcBlock		      "Dynamic model"
+      SrcPort		      13
+      Points		      [21, 0; 0, -220]
+      DstBlock		      "IMU_data"
+      DstPort		      9
+    }
+    Line {
+      SrcBlock		      "property\n"
+      SrcPort		      5
+      Points		      [75, 0]
+      DstBlock		      "Dynamic model"
+      DstPort		      9
+    }
+    Line {
+      SrcBlock		      "property\n"
+      SrcPort		      4
+      Points		      [44, 0; 0, -40]
+      DstBlock		      "Dynamic model"
+      DstPort		      8
+    }
+    Line {
+      SrcBlock		      "property\n"
+      SrcPort		      3
+      Points		      [37, 0; 0, -45]
+      DstBlock		      "Dynamic model"
+      DstPort		      7
+    }
+    Line {
+      SrcBlock		      "property\n"
+      SrcPort		      2
+      Points		      [54, 0; 0, -50]
+      DstBlock		      "Dynamic model"
+      DstPort		      6
+    }
+    Line {
+      SrcBlock		      "property\n"
+      SrcPort		      1
+      Points		      [35, 0; 0, -55]
+      DstBlock		      "Dynamic model"
+      DstPort		      5
+    }
+    Line {
+      SrcBlock		      "propeller_lift_force"
+      SrcPort		      2
+      Points		      [9, 0; 0, -5]
+      DstBlock		      "Dynamic model"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "propeller_lift_force"
+      SrcPort		      3
+      Points		      [40, 0]
+      DstBlock		      "Dynamic model"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "propeller_lift_force"
+      SrcPort		      1
+      DstBlock		      "Dynamic model"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "propeller_lift_force"
+      SrcPort		      4
+      Points		      [9, 0; 0, -15]
+      DstBlock		      "Dynamic model"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "Dynamic model"
+      SrcPort		      1
+      Points		      [8, 0; 0, 282; 226, 0; 0, -42]
+      DstBlock		      "GPS_data"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Dynamic model"
+      SrcPort		      2
+      Points		      [2, 0; 0, 282; 240, 0; 0, -37]
+      DstBlock		      "GPS_data"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Constant"
+      SrcPort		      1
+      DstBlock		      "propeller_lift_force"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Constant1"
+      SrcPort		      1
+      DstBlock		      "propeller_lift_force"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Constant2"
+      SrcPort		      1
+      DstBlock		      "propeller_lift_force"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Constant3"
+      SrcPort		      1
+      DstBlock		      "propeller_lift_force"
+      DstPort		      4
+    }
+    Line {
+      SrcBlock		      "IMU_data"
+      SrcPort		      1
+      DstBlock		      "tpeae312dc_123c_4cdc_ad61_e4d98a64dd9b"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "tpeae312dc_123c_4cdc_ad61_e4d98a64dd9b"
+      SrcPort		      1
+      DstBlock		      "To Workspace"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "GPS_data"
+      SrcPort		      1
+      DstBlock		      "tp4a022996_4e50_4f71_abf1_650af0ce02b3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "tp4a022996_4e50_4f71_abf1_650af0ce02b3"
+      SrcPort		      1
+      DstBlock		      "To Workspace1"
+      DstPort		      1
+    }
+  }
+}
+#Finite State Machines
+#
+#   Stateflow 80000005
+#
+#
+Stateflow {
+  machine {
+    id			    1
+    name		    "DoAero_2008a"
+    created		    "27-Sep-2016 21:22:34"
+    isLibrary		    0
+    firstTarget		    103
+    sfVersion		    71014000.000003
+  }
+  chart {
+    id			    2
+    name		    "IMU_data/vd sign"
+    windowPosition	    [422 539.941 189 413]
+    viewLimits		    [0 156.75 0 153.75]
+    screen		    [1 1 3600 1200 1.180555555555556]
+    treeNode		    [0 3 0 0]
+    firstTransition	    7
+    firstJunction	    6
+    viewObj		    2
+    machine		    1
+    ssIdHighWaterMark	    5
+    decomposition	    CLUSTER_CHART
+    type		    EML_CHART
+    firstData		    4
+    chartFileNumber	    1
+    disableImplicitCasting  1
+    eml {
+      name		      "fcn"
+    }
+  }
+  state {
+    id			    3
+    labelString		    "eML_blk_kernel()"
+    position		    [18 64.5 118 66]
+    fontSize		    12
+    chart		    2
+    treeNode		    [2 0 0 0]
+    superState		    SUBCHART
+    subviewer		    2
+    ssIdNumber		    1
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    eml {
+      isEML		      1
+      script		      "function y = fcn(u)\nif u>0;\ny=bin2dec('00000000');\nelseif u==0\ny=bin2dec('00000000');\nelse u"
+      "<0;\ny=bin2dec('00000100');\nend"
+      editorLayout	      "100 M4x1[10 5 700 500]"
+    }
+  }
+  data {
+    id			    4
+    ssIdNumber		    4
+    name		    "u"
+    linkNode		    [2 0 5]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    5
+    ssIdNumber		    5
+    name		    "y"
+    linkNode		    [2 4 0]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  junction {
+    id			    6
+    position		    [23.5747 49.5747 7]
+    chart		    2
+    linkNode		    [2 0 0]
+    subviewer		    2
+    ssIdNumber		    3
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    7
+    labelString		    "{eML_blk_kernel();}"
+    labelPosition	    [28.125 13.875 102.544 14.964]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 23.5747 14.625 0 0]
+    }
+    dst {
+      id		      6
+      intersection	      [1 0 -1 0 23.5747 42.5747 0 0]
+    }
+    midPoint		    [23.5747 24.9468]
+    chart		    2
+    linkNode		    [2 0 0]
+    dataLimits		    [21.175 25.975 14.625 42.575]
+    subviewer		    2
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    2
+  }
+  instance {
+    id			    8
+    name		    "IMU_data/vd sign"
+    machine		    1
+    chart		    2
+  }
+  chart {
+    id			    9
+    name		    "IMU_data/Data Preperation"
+    windowPosition	    [422 539.941 189 413]
+    viewLimits		    [0 156.75 0 153.75]
+    screen		    [1 1 3600 1200 1.180555555555556]
+    treeNode		    [0 10 0 0]
+    firstTransition	    34
+    firstJunction	    33
+    viewObj		    9
+    machine		    1
+    ssIdHighWaterMark	    30
+    decomposition	    CLUSTER_CHART
+    type		    EML_CHART
+    firstData		    11
+    chartFileNumber	    2
+    disableImplicitCasting  1
+    eml {
+      name		      "fcn"
+    }
+  }
+  state {
+    id			    10
+    labelString		    "eML_blk_kernel()"
+    position		    [18 64.5 118 66]
+    fontSize		    12
+    chart		    9
+    treeNode		    [9 0 0 0]
+    superState		    SUBCHART
+    subviewer		    9
+    ssIdNumber		    1
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    eml {
+      isEML		      1
+      script		      "function [pitch,roll,yaw,dpitch,droll,dyaw,vd,h,an,ae,ad] = fcn(pitch_angle,roll_angle,yaw_angle,"
+      "pitch_rate,roll_rate,yaw_rate,height,vertical_velocity,ax,ay,az)\n\npitch=round(pitch_angle*573);\nroll=round(ro"
+      "ll_angle*573);\nyaw=round(yaw_angle*573);\n\n\ndpitch=round(pitch_rate*573);\ndroll=round(roll_rate*573);\ndyaw="
+      "round(yaw_rate*573);\n\n\nh=round(height*1000);\nvd=round(vertical_velocity*100);\n\n\nRotation_metrix=[\n      "
+      "            cos(pitch_angle)*cos(yaw_angle)-cos(roll_angle)*sin(pitch_angle)*sin(yaw_angle),-cos(roll_angle)*cos"
+      "(yaw_angle)*sin(pitch_angle)-cos(pitch_angle)*sin(yaw_angle),sin(pitch_angle)*sin(roll_angle);\n                "
+      "  cos(yaw_angle)*sin(pitch_angle)+cos(pitch_angle)*cos(roll_angle)*sin(yaw_angle),cos(pitch_angle)*cos(roll_angl"
+      "e)-sin(pitch_angle)*sin(yaw_angle),-cos(pitch_angle)*sin(roll_angle);\n                  sin(roll_angle)*sin(yaw"
+      "_angle),cos(yaw_angle)*sin(roll_angle),cos(roll_angle)\n];\n\nB=[ax,ay,az]';\nA=Rotation_metrix*B;\nan=A(1,1);\n"
+      "ae=A(2,1);\nad=A(3,1);\n\nan=round(an*100);\nae=round(ae*100);\nad=round(ad*100);"
+      editorLayout	      "100 M4x1[10 5 700 500]"
+    }
+  }
+  data {
+    id			    11
+    ssIdNumber		    4
+    name		    "pitch"
+    linkNode		    [9 0 12]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    12
+    ssIdNumber		    6
+    name		    "roll"
+    linkNode		    [9 11 13]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    13
+    ssIdNumber		    7
+    name		    "yaw"
+    linkNode		    [9 12 14]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    14
+    ssIdNumber		    8
+    name		    "pitch_angle"
+    linkNode		    [9 13 15]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    15
+    ssIdNumber		    21
+    name		    "roll_angle"
+    linkNode		    [9 14 16]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    16
+    ssIdNumber		    22
+    name		    "yaw_angle"
+    linkNode		    [9 15 17]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    17
+    ssIdNumber		    23
+    name		    "pitch_rate"
+    linkNode		    [9 16 18]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    18
+    ssIdNumber		    24
+    name		    "roll_rate"
+    linkNode		    [9 17 19]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    19
+    ssIdNumber		    25
+    name		    "yaw_rate"
+    linkNode		    [9 18 20]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    20
+    ssIdNumber		    13
+    name		    "dpitch"
+    linkNode		    [9 19 21]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    21
+    ssIdNumber		    9
+    name		    "droll"
+    linkNode		    [9 20 22]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    22
+    ssIdNumber		    10
+    name		    "dyaw"
+    linkNode		    [9 21 23]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    23
+    ssIdNumber		    16
+    name		    "vd"
+    linkNode		    [9 22 24]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    24
+    ssIdNumber		    26
+    name		    "h"
+    linkNode		    [9 23 25]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    25
+    ssIdNumber		    17
+    name		    "height"
+    linkNode		    [9 24 26]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    26
+    ssIdNumber		    18
+    name		    "an"
+    linkNode		    [9 25 27]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    27
+    ssIdNumber		    19
+    name		    "ae"
+    linkNode		    [9 26 28]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    28
+    ssIdNumber		    20
+    name		    "ad"
+    linkNode		    [9 27 29]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    29
+    ssIdNumber		    27
+    name		    "vertical_velocity"
+    linkNode		    [9 28 30]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    30
+    ssIdNumber		    28
+    name		    "ax"
+    linkNode		    [9 29 31]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    31
+    ssIdNumber		    29
+    name		    "ay"
+    linkNode		    [9 30 32]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    32
+    ssIdNumber		    30
+    name		    "az"
+    linkNode		    [9 31 0]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  junction {
+    id			    33
+    position		    [23.5747 49.5747 7]
+    chart		    9
+    linkNode		    [9 0 0]
+    subviewer		    9
+    ssIdNumber		    3
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    34
+    labelString		    "{eML_blk_kernel();}"
+    labelPosition	    [28.125 13.875 102.544 14.964]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 23.5747 14.625 0 0]
+    }
+    dst {
+      id		      33
+      intersection	      [1 0 -1 0 23.5747 42.5747 0 0]
+    }
+    midPoint		    [23.5747 24.9468]
+    chart		    9
+    linkNode		    [9 0 0]
+    dataLimits		    [21.175 25.975 14.625 42.575]
+    subviewer		    9
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    2
+  }
+  instance {
+    id			    35
+    name		    "IMU_data/Data Preperation"
+    machine		    1
+    chart		    9
+  }
+  chart {
+    id			    36
+    name		    "IMU_data/MATLAB Function"
+    windowPosition	    [422 539.941 189 413]
+    viewLimits		    [0 156.75 0 153.75]
+    screen		    [1 1 3600 1200 1.180555555555556]
+    treeNode		    [0 37 0 0]
+    firstTransition	    53
+    firstJunction	    52
+    viewObj		    36
+    machine		    1
+    ssIdHighWaterMark	    17
+    decomposition	    CLUSTER_CHART
+    type		    EML_CHART
+    firstData		    38
+    chartFileNumber	    3
+    disableImplicitCasting  1
+    eml {
+      name		      "fcn"
+    }
+  }
+  state {
+    id			    37
+    labelString		    "eML_blk_kernel()"
+    position		    [18 64.5 118 66]
+    fontSize		    12
+    chart		    36
+    treeNode		    [36 0 0 0]
+    superState		    SUBCHART
+    subviewer		    36
+    ssIdNumber		    1
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    eml {
+      isEML		      1
+      script		      "function N1_data= fcn(pitch,roll,yaw,dpitch,droll,dyaw,vd,h,an,ae,ad,sign,cnt)\n%#eml\n\nIMU_data"
+      "_pack=zeros(1,41);\n\nIMU_data_pack(1,1)=165;%帧头\nIMU_data_pack(1,2)=90;%帧头\nIMU_data_pack(1,3)=83;%帧长度\n"
+      "IMU_data_pack(1,4)=0;%保留\nIMU_data_pack(1,5)=97;%帧标志\n%数据段\nIMU_data_pack(1,6)=127;%Flag0\nIMU_data_pack"
+      "(1,7)=11;%Flag1\nIMU_data_pack(1,8)=128;%NavStatus\nIMU_data_1_8=[IMU_data_pack(1,1),IMU_data_pack(1,2),IMU_data"
+      "_pack(1,3),IMU_data_pack(1,4),IMU_data_pack(1,5),IMU_data_pack(1,6),    IMU_data_pack(1,7),IMU_data_pack(1,8)];\n"
+      "\n% Pitch,Roll,Yaw\nIMU_data_pack(1,9)=pitch; %0,1\nIMU_data_pack(1,10)=roll;%2,3\nIMU_data_pack(1,11)=yaw;%4,5\n"
+      "IMU_data_9_10_11=[IMU_data_pack(1,9),IMU_data_pack(1,10),IMU_data_pack(1,11)];\n%q0,q1,q2,q3\nIMU_data_pack(1,12"
+      ")=0;%6,7,8,9\nIMU_data_pack(1,13)=0;%10,11,12,13\nIMU_data_pack(1,14)=0;%14,15,16,17\nIMU_data_pack(1,15)=0;%18,"
+      "19,20,21\nIMU_data_12_13_14_15=[IMU_data_pack(1,12),IMU_data_pack(1,13),IMU_data_pack(1,14),IMU_data_pack(1,15)]"
+      ";\n%dpitch,droll,dyaw 22~27\nIMU_data_pack(1,16)=dpitch;\nIMU_data_pack(1,17)=droll;\nIMU_data_pack(1,18)=dyaw;\n"
+      "IMU_data_9_10_11=[IMU_data_pack(1,16),IMU_data_pack(1,17),IMU_data_pack(1,18)];\n%AngRateN,AngRateE,AngRateD 28~"
+      "33\nIMU_data_pack(1,19)=0;\nIMU_data_pack(1,20)=0;\nIMU_data_pack(1,21)=0;\nIMU_data_19_20_21=[IMU_data_pack(1,1"
+      "9),IMU_data_pack(1,20),IMU_data_pack(1,21)];\n%AngRateX,AngRateY,AngRateZ 34~39\nIMU_data_pack(1,22)=0;\nIMU_dat"
+      "a_pack(1,23)=0;\nIMU_data_pack(1,24)=0;\nIMU_data_22_23_24=[IMU_data_pack(1,22),IMU_data_pack(1,23),IMU_data_pac"
+      "k(1,24)];\n%Position 40~51\nIMU_data_pack(1,25)=0;\nIMU_data_pack(1,26)=0;\nIMU_data_pack(1,27)=h;\nIMU_data_25_"
+      "26_27=[IMU_data_pack(1,25),IMU_data_pack(1,26),IMU_data_pack(1,27)];\n%Velocity NED\nIMU_data_pack(1,28)=sign;\n"
+      "%53~58\nIMU_data_pack(1,29)=0;\nIMU_data_pack(1,30)=0;\nIMU_data_pack(1,31)=vd;\nIMU_data_29_30_31=[IMU_data_pac"
+      "k(1,29),IMU_data_pack(1,30),IMU_data_pack(1,31)];\n%Acceleration NED 59~64\nIMU_data_pack(1,32)=an;\nIMU_data_pa"
+      "ck(1,33)=ae;\nIMU_data_pack(1,34)=ad;\nIMU_data_32_33_34=[IMU_data_pack(1,32),IMU_data_pack(1,33),IMU_data_pack("
+      "1,34)];\n%Acceleration XYZ 65~70\nIMU_data_pack(1,35)=0;\nIMU_data_pack(1,36)=0;\nIMU_data_pack(1,37)=0;\nIMU_da"
+      "ta_35_36_37=[IMU_data_pack(1,35),IMU_data_pack(1,36),IMU_data_pack(1,37)];\n%AirHeight 71~74\nIMU_data_pack(1,38"
+      ")=h;\n%cnt\nIMU_data_pack(1,39)=cnt;\n\n%%%%%%%%%%%%%Split Data for CRC 1~84\nIMU_split_crc=zeros(1,87);\n%1~8\n"
+      "j=1;\nfor i=1:1:8\nIMU_split_crc(1,i)=IMU_data_pack(1,i);\nj=j+1;\nend\n%9~14 pitch,roll,yaw\nfor i=9:1:11\n    "
+      "a=dec_to_bin_negative(IMU_data_pack(1,i),16);    \n   IMU_split_crc(1,j)=bin2dec(a(9:16));\n   j=j+1;\n   IMU_sp"
+      "lit_crc(1,j)=bin2dec(a(1:8));\n   j=j+1;\nend\n%15~30 q0,q1,q2,q3\nfor i=12:1:15\n    a=dec_to_bin_negative(IMU_"
+      "data_pack(1,i),32);\n    IMU_split_crc(1,j)=bin2dec(a(25:32));\n    j=j+1;\n    IMU_split_crc(1,j)=bin2dec(a(17:"
+      "24));\n    j=j+1;\n    IMU_split_crc(1,j)=bin2dec(a(9:16));\n    j=j+1;\n    IMU_split_crc(1,j)=bin2dec(a(1:8));"
+      "\n    j=j+1;\nend\n%31~36 dpitch,droll,dyaw\nfor i=16:1:18\na=dec_to_bin_negative(IMU_data_pack(1,i),16);\nIMU_s"
+      "plit_crc(1,j)=bin2dec(a(9:16));\nj=j+1;\nIMU_split_crc(1,j)=bin2dec(a(1:8));\nj=j+1;\nend\n%37~42 AngRateN,AngRa"
+      "teE,AngRateD\nfor i=19:1:21\na=dec_to_bin_negative(IMU_data_pack(1,i),16);\nIMU_split_crc(1,j)=bin2dec(a(9:16));"
+      "\nj=j+1;\nIMU_split_crc(1,j)=bin2dec(a(1:8));\nj=j+1;\nend\n%43~48 AngRateX,AngRateY,AngRateZ\nfor i=22:1:24\na="
+      "dec_to_bin_negative(IMU_data_pack(1,i),16);\nIMU_split_crc(1,j)=bin2dec(a(9:16));\nj=j+1;\nIMU_split_crc(1,j)=bi"
+      "n2dec(a(1:8));\nj=j+1;\nend\n%49~60 X,Y,Z\nfor i=25:1:27\na=dec_to_bin_negative(IMU_data_pack(1,i),32);\nIMU_spl"
+      "it_crc(1,j)=bin2dec(a(25:32));\nj=j+1;\nIMU_split_crc(1,j)=bin2dec(a(17:24));\nj=j+1;\nIMU_split_crc(1,j)=bin2de"
+      "c(a(9:16));\nj=j+1;\nIMU_split_crc(1,j)=bin2dec(a(1:8));\nj=j+1;\nend\n%61 sign\ni=28;\na=dec_to_bin_negative(IM"
+      "U_data_pack(1,i),8);\nIMU_split_crc(1,j)=bin2dec(a(1:8));\nj=j+1;\n%62~67 VN,VE,VD \nfor i=29:1:31\na=dec_to_bin"
+      "_negative(IMU_data_pack(1,i),16);  \nIMU_split_crc(1,j)=bin2dec(a(9:16));\nj=j+1;\nIMU_split_crc(1,j)=bin2dec(a("
+      "1:8));\nj=j+1;\nend\n%68~73 an,ae,ad\nfor i=32:1:34\na=dec_to_bin_negative(IMU_data_pack(1,i),16);  \nIMU_split_"
+      "crc(1,j)=bin2dec(a(9:16));\nj=j+1;\nIMU_split_crc(1,j)=bin2dec(a(1:8));\nj=j+1;\nend\n%74~79 ax,ay,az\nfor i=35:"
+      "1:37\na=dec_to_bin_negative(IMU_data_pack(1,i),16);  \nIMU_split_crc(1,j)=bin2dec(a(9:16));\nj=j+1;\nIMU_split_c"
+      "rc(1,j)=bin2dec(a(1:8));\nj=j+1;\nend\n%80~83 height\ni=38;\na=dec_to_bin_negative(IMU_data_pack(1,i),32);\nIMU_"
+      "split_crc(1,j)=bin2dec(a(25:32));\nj=j+1;\nIMU_split_crc(1,j)=bin2dec(a(17:24));\nj=j+1;\nIMU_split_crc(1,j)=bin"
+      "2dec(a(9:16));\nj=j+1;\nIMU_split_crc(1,j)=bin2dec(a(1:8));\nj=j+1;\n%84 cnt\ni=39;\na=dec_to_bin_negative(IMU_d"
+      "ata_pack(1,i),8);\nIMU_split_crc(1,j)=bin2dec(a(1:8));\n%%%%%%%%%%%%%%%%%%%%%\n\n%CRC\ncrc_gen=uint16(40961);\nc"
+      "rc=uint16(65535);\nbuf_len=84;\n if (buf_len~=0)\n    for i=1:1:buf_len\n        crc=uint16(bitxor(crc,uint16(IM"
+      "U_split_crc(1,i))));\n        for j=1:1:8;           \n        if (bitand(crc,1)==1)\n           crc=uint16(bits"
+      "hift(crc,-1));\n           crc=uint16(bitxor(crc,crc_gen));\n       else\n           crc=uint16(bitshift(crc,-1)"
+      ");\n       end\n        end\n    end\n end\nIMU_data_pack(1,40)=crc;\n\na=dec_to_bin_negative(IMU_data_pack(1,40"
+      "),16);\nIMU_split_crc(1,85)=bin2dec(a(9:16));\nIMU_split_crc(1,86)=bin2dec(a(1:8));\n\n\n%checksum\nchecksum=0;\n"
+      "for j=1:1:86;     \n   checksum=checksum+IMU_split_crc(1,j);     \nend\n\nchecksum_bin=dec2bin(checksum,32);\nch"
+      "ecksum=bin2dec(checksum_bin(25:32));\nIMU_split_crc(1,87)=checksum;\n\nN1_data=IMU_split_crc;\n\n"
+      editorLayout	      "100 M4x1[10 5 700 500]"
+    }
+  }
+  data {
+    id			    38
+    ssIdNumber		    4
+    name		    "pitch"
+    linkNode		    [36 0 39]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    39
+    ssIdNumber		    5
+    name		    "N1_data"
+    linkNode		    [36 38 40]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    40
+    ssIdNumber		    6
+    name		    "roll"
+    linkNode		    [36 39 41]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    41
+    ssIdNumber		    7
+    name		    "yaw"
+    linkNode		    [36 40 42]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    42
+    ssIdNumber		    8
+    name		    "dpitch"
+    linkNode		    [36 41 43]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    43
+    ssIdNumber		    9
+    name		    "droll"
+    linkNode		    [36 42 44]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    44
+    ssIdNumber		    10
+    name		    "dyaw"
+    linkNode		    [36 43 45]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    45
+    ssIdNumber		    11
+    name		    "vd"
+    linkNode		    [36 44 46]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    46
+    ssIdNumber		    12
+    name		    "h"
+    linkNode		    [36 45 47]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    47
+    ssIdNumber		    13
+    name		    "an"
+    linkNode		    [36 46 48]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    48
+    ssIdNumber		    14
+    name		    "ae"
+    linkNode		    [36 47 49]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    49
+    ssIdNumber		    15
+    name		    "ad"
+    linkNode		    [36 48 50]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    50
+    ssIdNumber		    16
+    name		    "sign"
+    linkNode		    [36 49 51]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    51
+    ssIdNumber		    17
+    name		    "cnt"
+    linkNode		    [36 50 0]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  junction {
+    id			    52
+    position		    [23.5747 49.5747 7]
+    chart		    36
+    linkNode		    [36 0 0]
+    subviewer		    36
+    ssIdNumber		    3
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    53
+    labelString		    "{eML_blk_kernel();}"
+    labelPosition	    [28.125 13.875 102.544 14.964]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 23.5747 14.625 0 0]
+    }
+    dst {
+      id		      52
+      intersection	      [1 0 -1 0 23.5747 42.5747 0 0]
+    }
+    midPoint		    [23.5747 24.9468]
+    chart		    36
+    linkNode		    [36 0 0]
+    dataLimits		    [21.175 25.975 14.625 42.575]
+    subviewer		    36
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    2
+  }
+  instance {
+    id			    54
+    name		    "IMU_data/MATLAB Function"
+    machine		    1
+    chart		    36
+  }
+  chart {
+    id			    55
+    name		    "GPS_data/Send_GPS"
+    windowPosition	    [422 539.941 189 413]
+    viewLimits		    [0 156.75 0 153.75]
+    screen		    [1 1 3600 1200 1.180555555555556]
+    treeNode		    [0 56 0 0]
+    firstTransition	    67
+    firstJunction	    66
+    viewObj		    55
+    machine		    1
+    ssIdHighWaterMark	    13
+    decomposition	    CLUSTER_CHART
+    type		    EML_CHART
+    firstData		    57
+    chartFileNumber	    4
+    disableImplicitCasting  1
+    eml {
+      name		      "fcn"
+    }
+  }
+  state {
+    id			    56
+    labelString		    "eML_blk_kernel()"
+    position		    [18 64.5 118 66]
+    fontSize		    12
+    chart		    55
+    treeNode		    [55 0 0 0]
+    superState		    SUBCHART
+    subviewer		    55
+    ssIdNumber		    1
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    eml {
+      isEML		      1
+      script		      "function [A,A_lat]= fcn(x,y,z,x_dot,y_dot,yaw,lat_before)\n\n%GPGGA\nA=zeros(1,36);\nA(1,1)='$';\n"
+      "A(1,2)='G';\nA(1,3)='P';\nA(1,4)='G';\nA(1,5)='G';\nA(1,6)='A';\nA(1,7)=2016;%UTC time <1>\nA(1,8)=y/111318+30;%"
+      "lat <2>\nA_lat=A(1,8);\nA(1,9)='N';%<3>\nA(1,10)=x/110946/cos(lat_before*0.017453291)+120;%lon <4>\nA(1,11)='E';"
+      "%<5>\nA(1,12)='0';%<6>\nA(1,13)=12;%<7>\nA(1,14)=0.5;%<8>\nA(1,15)=z;%<9>\nA(1,16)=z;%<10>\nA(1,17)='*';\n\n\n%G"
+      "PRMC\n\nA(1,18)='$';\nA(1,19)='G';\nA(1,20)='P';\nA(1,21)='R';\nA(1,22)='M';\nA(1,23)='C';\nA(1,24)=2016;%UTC ti"
+      "me <1>\nA(1,25)='A'; %<2>\nA(1,26)=y/111318+30;  %<3>\nA(1,27)='N';   %<4>\nA(1,28)=x/110946/cos(lat_before*0.01"
+      "7453291)+120;  %<5>\nA(1,29)='E'; %<6>\nA(1,30)=sqrt(x_dot^2+y_dot^2);   %<7>\nA(1,31)=yaw;%<8>\nA(1,32)=2016;%<"
+      "9>\nA(1,33)=0;%<10>\nA(1,34)='E';%<11>\nA(1,35)='A';%<12>\nA(1,36)='*';%<13>\n"
+      editorLayout	      "100 M4x1[10 5 700 500]"
+    }
+  }
+  data {
+    id			    57
+    ssIdNumber		    4
+    name		    "x"
+    linkNode		    [55 0 58]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    58
+    ssIdNumber		    5
+    name		    "A"
+    linkNode		    [55 57 59]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    59
+    ssIdNumber		    7
+    name		    "y"
+    linkNode		    [55 58 60]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    60
+    ssIdNumber		    8
+    name		    "z"
+    linkNode		    [55 59 61]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    61
+    ssIdNumber		    11
+    name		    "x_dot"
+    linkNode		    [55 60 62]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    62
+    ssIdNumber		    12
+    name		    "y_dot"
+    linkNode		    [55 61 63]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    63
+    ssIdNumber		    13
+    name		    "yaw"
+    linkNode		    [55 62 64]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    64
+    ssIdNumber		    9
+    name		    "lat_before"
+    linkNode		    [55 63 65]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    65
+    ssIdNumber		    10
+    name		    "A_lat"
+    linkNode		    [55 64 0]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  junction {
+    id			    66
+    position		    [23.5747 49.5747 7]
+    chart		    55
+    linkNode		    [55 0 0]
+    subviewer		    55
+    ssIdNumber		    3
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    67
+    labelString		    "{eML_blk_kernel();}"
+    labelPosition	    [28.125 13.875 102.544 14.964]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 23.5747 14.625 0 0]
+    }
+    dst {
+      id		      66
+      intersection	      [1 0 -1 0 23.5747 42.5747 0 0]
+    }
+    midPoint		    [23.5747 24.9468]
+    chart		    55
+    linkNode		    [55 0 0]
+    dataLimits		    [21.175 25.975 14.625 42.575]
+    subviewer		    55
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    2
+  }
+  instance {
+    id			    68
+    name		    "GPS_data/Send_GPS"
+    machine		    1
+    chart		    55
+  }
+  chart {
+    id			    69
+    name		    "propeller_lift_force"
+    windowPosition	    [422 539.941 189 413]
+    viewLimits		    [0 156.75 0 153.75]
+    screen		    [1 1 3600 1200 1.180555555555556]
+    treeNode		    [0 70 0 0]
+    firstTransition	    80
+    firstJunction	    79
+    viewObj		    69
+    machine		    1
+    ssIdHighWaterMark	    11
+    decomposition	    CLUSTER_CHART
+    type		    EML_CHART
+    firstData		    71
+    chartFileNumber	    5
+    disableImplicitCasting  1
+    eml {
+      name		      "fcn"
+    }
+  }
+  state {
+    id			    70
+    labelString		    "eML_blk_kernel()"
+    position		    [18 64.5 118 66]
+    fontSize		    12
+    chart		    69
+    treeNode		    [69 0 0 0]
+    superState		    SUBCHART
+    subviewer		    69
+    ssIdNumber		    1
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    eml {
+      isEML		      1
+      script		      "function [u1,u2,u3,u4] = fcn(motor1_pwm,motor2_pwm,motor3_pwm,motor4_pwm)\n\nn1=(motor1_pwm-1050)"
+      "*7.054+900;\nn2=(motor2_pwm-1050)*7.054+900;\nn3=(motor3_pwm-1050)*7.054+900;\nn4=(motor4_pwm-1050)*7.054+900;\n"
+      "\n\nF1=1.0384e-7*n1^2;\nF2=1.0384e-7*n2^2;\nF3=1.0384e-7*n3^2;\nF4=1.0384e-7*n4^2;\n\nu1=F1+F2+F3+F4;\nu2=F4-F2;"
+      "\nu3=F3-F1;\nu4=F2+F4-F1-F3;\n"
+      editorLayout	      "100 M4x1[10 5 700 500]"
+    }
+  }
+  data {
+    id			    71
+    ssIdNumber		    4
+    name		    "motor1_pwm"
+    linkNode		    [69 0 72]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    72
+    ssIdNumber		    5
+    name		    "u1"
+    linkNode		    [69 71 73]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    73
+    ssIdNumber		    6
+    name		    "motor2_pwm"
+    linkNode		    [69 72 74]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    74
+    ssIdNumber		    7
+    name		    "motor3_pwm"
+    linkNode		    [69 73 75]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    75
+    ssIdNumber		    8
+    name		    "motor4_pwm"
+    linkNode		    [69 74 76]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    76
+    ssIdNumber		    9
+    name		    "u2"
+    linkNode		    [69 75 77]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    77
+    ssIdNumber		    10
+    name		    "u3"
+    linkNode		    [69 76 78]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    78
+    ssIdNumber		    11
+    name		    "u4"
+    linkNode		    [69 77 0]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  junction {
+    id			    79
+    position		    [23.5747 49.5747 7]
+    chart		    69
+    linkNode		    [69 0 0]
+    subviewer		    69
+    ssIdNumber		    3
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    80
+    labelString		    "{eML_blk_kernel();}"
+    labelPosition	    [28.125 13.875 102.544 14.964]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 23.5747 14.625 0 0]
+    }
+    dst {
+      id		      79
+      intersection	      [1 0 -1 0 23.5747 42.5747 0 0]
+    }
+    midPoint		    [23.5747 24.9468]
+    chart		    69
+    linkNode		    [69 0 0]
+    dataLimits		    [21.175 25.975 14.625 42.575]
+    subviewer		    69
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    2
+  }
+  instance {
+    id			    81
+    name		    "propeller_lift_force"
+    machine		    1
+    chart		    69
+  }
+  chart {
+    id			    82
+    name		    "Dynamic model/MATLAB Function"
+    windowPosition	    [422 539.941 189 413]
+    viewLimits		    [0 156.75 0 153.75]
+    screen		    [1 1 3600 1200 1.180555555555556]
+    treeNode		    [0 83 0 0]
+    firstTransition	    94
+    firstJunction	    93
+    viewObj		    82
+    machine		    1
+    ssIdHighWaterMark	    12
+    decomposition	    CLUSTER_CHART
+    type		    EML_CHART
+    firstData		    84
+    chartFileNumber	    8
+    disableImplicitCasting  1
+    eml {
+      name		      "fcn"
+    }
+  }
+  state {
+    id			    83
+    labelString		    "eML_blk_kernel()"
+    position		    [18 64.5 118 66]
+    fontSize		    12
+    chart		    82
+    treeNode		    [82 0 0 0]
+    superState		    SUBCHART
+    subviewer		    82
+    ssIdNumber		    1
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    eml {
+      isEML		      1
+      script		      "function [sinpitch,cospitch,sinroll,cosroll,sinyaw,cosyaw]= fcn(pitch,roll,yaw)\nsinpitch=sin(pit"
+      "ch);\ncospitch=cos(pitch);\nsinroll=sin(roll);\ncosroll=cos(roll);\nsinyaw=sin(yaw);\ncosyaw=cos(yaw);"
+      editorLayout	      "100 M4x1[10 5 700 500]"
+    }
+  }
+  data {
+    id			    84
+    ssIdNumber		    4
+    name		    "pitch"
+    linkNode		    [82 0 85]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    85
+    ssIdNumber		    5
+    name		    "sinpitch"
+    linkNode		    [82 84 86]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    86
+    ssIdNumber		    6
+    name		    "roll"
+    linkNode		    [82 85 87]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    87
+    ssIdNumber		    7
+    name		    "yaw"
+    linkNode		    [82 86 88]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_INHERITED
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    88
+    ssIdNumber		    8
+    name		    "cospitch"
+    linkNode		    [82 87 89]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    89
+    ssIdNumber		    9
+    name		    "sinroll"
+    linkNode		    [82 88 90]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    90
+    ssIdNumber		    10
+    name		    "cosroll"
+    linkNode		    [82 89 91]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    91
+    ssIdNumber		    11
+    name		    "sinyaw"
+    linkNode		    [82 90 92]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    92
+    ssIdNumber		    12
+    name		    "cosyaw"
+    linkNode		    [82 91 0]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  junction {
+    id			    93
+    position		    [23.5747 49.5747 7]
+    chart		    82
+    linkNode		    [82 0 0]
+    subviewer		    82
+    ssIdNumber		    3
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    94
+    labelString		    "{eML_blk_kernel();}"
+    labelPosition	    [28.125 13.875 102.544 14.964]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 23.5747 14.625 0 0]
+    }
+    dst {
+      id		      93
+      intersection	      [1 0 -1 0 23.5747 42.5747 0 0]
+    }
+    midPoint		    [23.5747 24.9468]
+    chart		    82
+    linkNode		    [82 0 0]
+    dataLimits		    [21.175 25.975 14.625 42.575]
+    subviewer		    82
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    2
+  }
+  instance {
+    id			    95
+    name		    "Dynamic model/MATLAB Function"
+    machine		    1
+    chart		    82
+  }
+  chart {
+    id			    96
+    name		    "IMU_data/MATLAB Function7"
+    windowPosition	    [422 539.941 189 413]
+    viewLimits		    [0 156.75 0 153.75]
+    screen		    [1 1 3600 1200 1.180555555555556]
+    treeNode		    [0 97 0 0]
+    firstTransition	    101
+    firstJunction	    100
+    viewObj		    96
+    machine		    1
+    ssIdHighWaterMark	    8
+    decomposition	    CLUSTER_CHART
+    type		    EML_CHART
+    firstData		    98
+    chartFileNumber	    14
+    disableImplicitCasting  1
+    eml {
+      name		      "fcn"
+    }
+  }
+  state {
+    id			    97
+    labelString		    "eML_blk_kernel()"
+    position		    [18 64.5 118 66]
+    fontSize		    12
+    chart		    96
+    treeNode		    [96 0 0 0]
+    superState		    SUBCHART
+    subviewer		    96
+    ssIdNumber		    1
+    type		    FUNC_STATE
+    decomposition	    CLUSTER_STATE
+    eml {
+      isEML		      1
+      script		      "function y1= fcn(cnt)\n\n\n\ny1=cnt+1;\nif y1>255\ny1=1;\nend"
+      editorLayout	      "100 M4x1[10 5 700 500]"
+    }
+  }
+  data {
+    id			    98
+    ssIdNumber		    5
+    name		    "y1"
+    linkNode		    [96 0 99]
+    scope		    OUTPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  data {
+    id			    99
+    ssIdNumber		    7
+    name		    "cnt"
+    linkNode		    [96 98 0]
+    scope		    INPUT_DATA
+    machine		    1
+    props {
+      array {
+	size			"-1"
+      }
+      type {
+	method			SF_INHERITED_TYPE
+	primitive		SF_DOUBLE_TYPE
+	isSigned		1
+	wordLength		"16"
+      }
+      complexity	      SF_COMPLEX_INHERITED
+      frame		      SF_FRAME_NO
+    }
+    dataType		    "Inherit: Same as Simulink"
+  }
+  junction {
+    id			    100
+    position		    [23.5747 49.5747 7]
+    chart		    96
+    linkNode		    [96 0 0]
+    subviewer		    96
+    ssIdNumber		    3
+    type		    CONNECTIVE_JUNCTION
+  }
+  transition {
+    id			    101
+    labelString		    "{eML_blk_kernel();}"
+    labelPosition	    [28.125 13.875 102.544 14.964]
+    fontSize		    12
+    src {
+      intersection	      [0 0 1 0 23.5747 14.625 0 0]
+    }
+    dst {
+      id		      100
+      intersection	      [1 0 -1 0 23.5747 42.5747 0 0]
+    }
+    midPoint		    [23.5747 24.9468]
+    chart		    96
+    linkNode		    [96 0 0]
+    dataLimits		    [21.175 25.975 14.625 42.575]
+    subviewer		    96
+    drawStyle		    SMART
+    slide {
+      sticky		      BOTH_STICK
+    }
+    executionOrder	    1
+    ssIdNumber		    2
+  }
+  instance {
+    id			    102
+    name		    "IMU_data/MATLAB Function7"
+    machine		    1
+    chart		    96
+  }
+  target {
+    id			    103
+    name		    "sfun"
+    description		    "Default Simulink S-Function Target."
+    codeFlags		    " debug=0 overflow=1 echo=1"
+    machine		    1
+    linkNode		    [1 0 0]
+  }
+}
